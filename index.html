@@ -325,6 +325,45 @@
       border: 1px solid var(--border-subtle);
     }
 
+    .weather-bar {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      min-height: 38px;
+    }
+    .weather-bar.visible { display: flex; }
+    .weather-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .weather-temp {
+      font-weight: 700;
+      color: var(--text-primary);
+      font-variant-numeric: tabular-nums;
+    }
+    .weather-condition {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .weather-loading {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .weather-loading .loading-spinner {
+      width: 12px;
+      height: 12px;
+    }
+
     /* ---- Search / Filter ---- */
     .search-container {
       padding: 12px 16px 10px;
@@ -670,6 +709,12 @@
       <div id="displayTime" class="local-time">--:-- --</div>
     </div>
 
+    <div class="weather-bar" id="weatherBar">
+      <span class="weather-icon" id="weatherIcon"></span>
+      <span class="weather-temp" id="weatherTemp"></span>
+      <span class="weather-condition" id="weatherCondition"></span>
+    </div>
+
     <div class="search-container">
       <select id="countrySelect" class="sidebar-select" onchange="loadCountry(this.value)">
         <option value="">Choose Country...</option>
@@ -721,6 +766,40 @@
     const pingValue = document.getElementById('pingValue');
     let pingInterval = null;
     let lastPingMs = null;
+
+    // Weather code to condition mapping
+    const weatherCodeMap = {
+      0: { text: 'Clear sky', icon: '\u2600\uFE0F' },
+      1: { text: 'Mainly clear', icon: '\uD83C\uDF24\uFE0F' },
+      2: { text: 'Partly cloudy', icon: '\u26C5' },
+      3: { text: 'Overcast', icon: '\u2601\uFE0F' },
+      45: { text: 'Foggy', icon: '\uD83C\uDF2B\uFE0F' },
+      48: { text: 'Rime fog', icon: '\uD83C\uDF2B\uFE0F' },
+      51: { text: 'Light drizzle', icon: '\uD83C\uDF26\uFE0F' },
+      53: { text: 'Moderate drizzle', icon: '\uD83C\uDF26\uFE0F' },
+      55: { text: 'Dense drizzle', icon: '\uD83C\uDF27\uFE0F' },
+      56: { text: 'Freezing drizzle', icon: '\uD83C\uDF27\uFE0F' },
+      57: { text: 'Heavy freezing drizzle', icon: '\uD83C\uDF27\uFE0F' },
+      61: { text: 'Slight rain', icon: '\uD83C\uDF26\uFE0F' },
+      63: { text: 'Moderate rain', icon: '\uD83C\uDF27\uFE0F' },
+      65: { text: 'Heavy rain', icon: '\uD83C\uDF27\uFE0F' },
+      66: { text: 'Freezing rain', icon: '\uD83C\uDF27\uFE0F' },
+      67: { text: 'Heavy freezing rain', icon: '\uD83C\uDF27\uFE0F' },
+      71: { text: 'Slight snow', icon: '\uD83C\uDF28\uFE0F' },
+      73: { text: 'Moderate snow', icon: '\uD83C\uDF28\uFE0F' },
+      75: { text: 'Heavy snow', icon: '\u2744\uFE0F' },
+      77: { text: 'Snow grains', icon: '\u2744\uFE0F' },
+      80: { text: 'Slight rain showers', icon: '\uD83C\uDF26\uFE0F' },
+      81: { text: 'Moderate rain showers', icon: '\uD83C\uDF27\uFE0F' },
+      82: { text: 'Violent rain showers', icon: '\u26C8\uFE0F' },
+      85: { text: 'Slight snow showers', icon: '\uD83C\uDF28\uFE0F' },
+      86: { text: 'Heavy snow showers', icon: '\u2744\uFE0F' },
+      95: { text: 'Thunderstorm', icon: '\u26C8\uFE0F' },
+      96: { text: 'Thunderstorm with hail', icon: '\u26C8\uFE0F' },
+      99: { text: 'Thunderstorm with heavy hail', icon: '\u26C8\uFE0F' }
+    };
+
+    const weatherCache = {};
 
     // Measure latency from HLS fragment load times (time to first byte)
     hls.on(Hls.Events.FRAG_LOADED, function(event, data) {
@@ -891,6 +970,10 @@
       if (timeInterval) clearInterval(timeInterval);
       timeInterval = setInterval(() => updateTime(countryData.timeZone), 60000);
 
+      if (countryData.capital) {
+        fetchWeather(countryData.capital, code);
+      }
+
       document.getElementById('channelList').innerHTML = '<div class="loading-skeleton"><div class="loading-spinner"></div> Loading channels...</div>';
       const res = await fetch(`/api/channels/country/${code.toLowerCase()}`);
       allChannels = await res.json();
@@ -1027,6 +1110,59 @@
       toast.textContent = msg;
       toast.classList.add('show');
       setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    async function fetchWeather(capital, countryCode) {
+      const cacheKey = countryCode.toUpperCase();
+      if (weatherCache[cacheKey]) {
+        displayWeather(weatherCache[cacheKey]);
+        return;
+      }
+
+      const weatherBar = document.getElementById('weatherBar');
+      weatherBar.classList.add('visible');
+      document.getElementById('weatherIcon').textContent = '';
+      document.getElementById('weatherTemp').textContent = '';
+      document.getElementById('weatherCondition').innerHTML = '<span class="weather-loading"><span class="loading-spinner"></span> Loading weather...</span>';
+
+      try {
+        const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(capital)}&count=1&language=en`);
+        const geoData = await geoRes.json();
+        if (!geoData.results || geoData.results.length === 0) {
+          weatherBar.classList.remove('visible');
+          return;
+        }
+        const { latitude, longitude } = geoData.results[0];
+
+        const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`);
+        const weatherData = await weatherRes.json();
+        if (!weatherData.current_weather) {
+          weatherBar.classList.remove('visible');
+          return;
+        }
+
+        const result = {
+          tempC: Math.round(weatherData.current_weather.temperature),
+          code: weatherData.current_weather.weathercode,
+          windSpeed: Math.round(weatherData.current_weather.windspeed)
+        };
+        result.tempF = Math.round(result.tempC * 9 / 5 + 32);
+
+        weatherCache[cacheKey] = result;
+        displayWeather(result);
+      } catch (e) {
+        weatherBar.classList.remove('visible');
+      }
+    }
+
+    function displayWeather(data) {
+      const weatherBar = document.getElementById('weatherBar');
+      const condition = weatherCodeMap[data.code] || { text: 'Unknown', icon: '\uD83C\uDF21\uFE0F' };
+
+      document.getElementById('weatherIcon').textContent = condition.icon;
+      document.getElementById('weatherTemp').textContent = `${data.tempC}\u00B0C / ${data.tempF}\u00B0F`;
+      document.getElementById('weatherCondition').textContent = condition.text;
+      weatherBar.classList.add('visible');
     }
 
     init();
