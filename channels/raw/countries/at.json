@@ -167,6 +167,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "OT7TEEnQQex3sV",
+    "name": "ORF I",
+    "iptv_urls": [
+      "https://s6.hopslan.com/orf1111/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "RiifWdXjWLsqP4",
     "name": "ORF III HD",
     "iptv_urls": [
@@ -195,6 +206,17 @@
     "youtube_urls": [
       "https://www.youtube-nocookie.com/embed/LNySQz-I630"
     ],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "X5Pfjn7eTrt21i",
+    "name": "Servus TV",
+    "iptv_urls": [
+      "https://s6.hopslan.com/servus1/tracks-v1a1/mono.m3u8"
+    ],
+    "youtube_urls": [],
     "language": "deu",
     "country": "at",
     "isGeoBlocked": false
