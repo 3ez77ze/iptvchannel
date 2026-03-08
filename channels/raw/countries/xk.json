@@ -64,5 +64,16 @@
     "language": "sqi",
     "country": "xk",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rT5nGkWx8pHvLc",
+    "name": "RTK 1 SAT",
+    "iptv_urls": [
+      "https://cache1a.netplus.ch/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzczMDE4MzE0Iiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy9ydGsxL2Jyb3dzZXItSExTOC8iLCJzZXNzaW9uX2Nkbl9pZCI6IjZhNDljYTIxZDUxYTEwMDIiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzEwLjAuMjI5LjE4Iiwic2Vzc2lvbl90aW1lb3V0IjowLCJhdWQiOiI1MyIsInNvdXJjZXMiOlsxMDBdfQ==.TuK03zw01WPWqfwrxYYyn1cr9ZtIC7xYgWO-9dhoWBozJTZT-XHURIiG-0P9b_es8p42apQz1uLf17T-Qmlj6A==/live/eds/rtk1/browser-HLS8/rtk1.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
   }
 ]

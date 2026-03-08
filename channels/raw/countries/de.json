@@ -1894,5 +1894,16 @@
     "language": "deu",
     "country": "de",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "vN3hPwLm8qRtYe",
+    "name": "Sachsen Fernsehen Chemnitz",
+    "iptv_urls": [
+      "https://chemnitz.iptv-playoutcenter.de/chemnitz/chemnitzfernsehen.stream_1/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
   }
 ]
