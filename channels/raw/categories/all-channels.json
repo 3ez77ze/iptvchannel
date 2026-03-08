@@ -62309,9 +62309,9 @@
   },
   {
     "nanoid": "tvbUhtaFYB4dE2",
-    "name": "Rtl/Vox HD",
+    "name": "Vox HD",
     "iptv_urls": [
-      "https://s6.hopslan.com/voxz/tracks-v1a1/mono.m3u8"
+      "https://cachehsi1a.netplus.ch/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzczMDI5ODU1Iiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy92b3gvYnJvd3Nlci1ITFM4LyIsInNlc3Npb25fY2RuX2lkIjoiMTQxOTRkMjNjOWYzNDdkMCIsInNlc3Npb25faWQiOiIiLCJjbGllbnRfaWQiOiIiLCJkZXZpY2VfaWQiOiIiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMTAuMC4yMjkuMTkiLCJzZXNzaW9uX3RpbWVvdXQiOjAsImF1ZCI6IjQxIiwic291cmNlcyI6WzQ4XX0=.33eXkAAQ2VMxkCD0pg49dDBf4s3QMYcl14ppfRsMQHK4RU76FaoR8sHrKVJTp3CQSB6ns0SawEhcGxHuHwpoYg==/live/eds/vox/browser-HLS8/vox.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -62322,7 +62322,7 @@
     "nanoid": "dGLOj62m1kpm6o",
     "name": "N24/WELT HD",
     "iptv_urls": [
-      "https://broadcast.welt.personalstream.tv/v1/manifest/bed31ae6b23b93b0843b9825ea57f506cf4da916/welt-tv-prod/9bd80acc-1d60-43d1-9e2f-598bd93f8128/hdntl=exp=1772448680~acl=%2f*~data=hdntl~hmac=2107fc535c1199fdabecbbe4888ebdafc47a4ee18b5f05400ec28f005c5b19bd/6.m3u8?platform=web"
+      "https://cache1a.netplus.ch/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzczMDI5Nzg2Iiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy9uMjQvYnJvd3Nlci1ITFM4LyIsInNlc3Npb25fY2RuX2lkIjoiYzZkMzg3NDc3YThmYTNiOSIsInNlc3Npb25faWQiOiIiLCJjbGllbnRfaWQiOiIiLCJkZXZpY2VfaWQiOiIiLCJtYXhfc2Vzc2lvbnMiOjAsInNlc3Npb25fZHVyYXRpb24iOjAsInVybCI6Imh0dHBzOi8vMTAuMC4yMjkuMTkiLCJzZXNzaW9uX3RpbWVvdXQiOjAsImF1ZCI6IjUzIiwic291cmNlcyI6WzQ4XX0=.BKdxSGjkuKF9-AYOH_NKdBYPejnkqsV11CQkWfVHELOg12sU8rXnMxKAWp3JRJAitK8oPWVYRpJ9LHaRx2aQPQ==/live/eds/n24/browser-HLS8/n24.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
