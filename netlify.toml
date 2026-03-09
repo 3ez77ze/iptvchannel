@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  edge_functions = "netlify/edge-functions"
 
 # Rewrite API routes to serve the static JSON data files directly.
 # Status 200 makes these transparent rewrites (not client-visible redirects).

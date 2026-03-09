@@ -1727,8 +1727,14 @@
       updateStarButton();
       showNowPlaying(ch.name);
 
-      const iptvUrl = ch.iptv_urls?.[0];
+      const rawIptvUrl = ch.iptv_urls?.[0];
       const ytUrl = ch.youtube_urls?.[0];
+
+      // Route redirect-based URLs through the server-side proxy to handle CORS
+      let iptvUrl = rawIptvUrl;
+      if (rawIptvUrl && rawIptvUrl.includes('viamotionhsi.netplus.ch')) {
+        iptvUrl = '/api/stream-proxy?url=' + encodeURIComponent(rawIptvUrl);
+      }
 
       if (iptvUrl) {
         iframe.style.display = 'none';
