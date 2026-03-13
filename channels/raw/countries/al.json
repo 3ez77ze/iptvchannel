@@ -121,5 +121,16 @@
     "language": "sqi",
     "country": "al",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "R3fLaIPeXSy2kS",
+    "name": "ALBUK HD",
+    "iptv_urls": [
+      "https://albuk.albuk.co:8443/albuk/albuk.stream/chunklist_w9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
   }
 ]
