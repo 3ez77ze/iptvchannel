@@ -1781,7 +1781,13 @@
         hls.stopLoad();
         hidePing();
         iframe.style.display = 'block';
-        iframe.src = embedUrl2 + '?autoplay=1';
+        let finalEmbedUrl = embedUrl2;
+        if (finalEmbedUrl.includes('player.twitch.tv')) {
+          finalEmbedUrl += (finalEmbedUrl.includes('?') ? '&' : '?') + 'parent=' + window.location.hostname + '&autoplay=true&muted=false';
+        } else {
+          finalEmbedUrl += (finalEmbedUrl.includes('?') ? '&' : '?') + 'autoplay=1';
+        }
+        iframe.src = finalEmbedUrl;
       }
     }
 

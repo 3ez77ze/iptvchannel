@@ -154,5 +154,17 @@
     "language": "sqi",
     "country": "al",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fR_qS4VmTaZsi8",
+    "name": "Top News Albania",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://player.twitch.tv/?channel=topmedia_topnews"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
   }
 ]
