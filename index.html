@@ -274,6 +274,8 @@
       overflow: hidden;
       transition: width 0.2s ease, opacity 0.2s ease;
       opacity: 0;
+      display: flex;
+      align-items: center;
     }
     .player-volume-group:hover .player-volume-slider {
       width: 70px;
@@ -283,11 +285,16 @@
       -webkit-appearance: none;
       appearance: none;
       width: 65px;
-      height: 3px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 2px;
+      height: 12px;
+      background: transparent;
       outline: none;
       cursor: pointer;
+      --vol-pct: 100%;
+    }
+    .player-volume-slider input[type="range"]::-webkit-slider-runnable-track {
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(to right, #fff var(--vol-pct), rgba(255,255,255,0.2) var(--vol-pct));
     }
     .player-volume-slider input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -297,6 +304,17 @@
       border-radius: 50%;
       cursor: pointer;
       box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      margin-top: -4.5px;
+    }
+    .player-volume-slider input[type="range"]::-moz-range-track {
+      height: 3px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 2px;
+    }
+    .player-volume-slider input[type="range"]::-moz-range-progress {
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
     }
     .player-volume-slider input[type="range"]::-moz-range-thumb {
       width: 12px;
@@ -329,6 +347,8 @@
 
     .player-quality-menu {
       position: relative;
+      display: flex;
+      align-items: center;
     }
     .player-quality-btn {
       width: auto;
@@ -375,6 +395,19 @@
       opacity: 0;
     }
     .player-quality-option.active .quality-check { opacity: 1; }
+    .player-hd-badge {
+      background: #2196F3;
+      color: #fff;
+      font-size: 0.55rem;
+      font-weight: 800;
+      padding: 1px 5px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      display: none;
+      margin-right: 2px;
+    }
+    .player-hd-badge.visible { display: inline-block; }
 
     .custom-player:-webkit-full-screen { max-width: 100%; max-height: 100%; border-radius: 0; }
     .custom-player:fullscreen { max-width: 100%; max-height: 100%; border-radius: 0; }
@@ -1015,6 +1048,7 @@
             </div>
             <div class="player-controls-right">
               <div class="player-quality-menu" id="qualityMenu" style="display:none;">
+                <span class="player-hd-badge" id="hdBadge">HD</span>
                 <button class="player-btn player-quality-btn" id="qualityBtn" title="Quality">Auto</button>
                 <div class="player-quality-dropdown" id="qualityDropdown"></div>
               </div>
@@ -1388,6 +1422,7 @@
     const qualityMenu = document.getElementById('qualityMenu');
     const qualityBtn = document.getElementById('qualityBtn');
     const qualityDropdown = document.getElementById('qualityDropdown');
+    const hdBadge = document.getElementById('hdBadge');
     const pipBtn = document.getElementById('pipBtn');
     const theaterBtn = document.getElementById('theaterBtn');
     const fullscreenBtn = document.getElementById('fullscreenBtn');
@@ -1467,6 +1502,7 @@
         video.muted = true;
       }
       updateVolumeIcon();
+      updateVolumeSliderFill();
     });
 
     volumeSlider.addEventListener('input', (e) => {
@@ -1475,6 +1511,7 @@
       video.muted = video.volume === 0;
       savedVolume = video.volume || savedVolume;
       updateVolumeIcon();
+      updateVolumeSliderFill();
     });
 
     function updateVolumeIcon() {
@@ -1485,6 +1522,12 @@
         volHighIcon.style.display = '';
         volMuteIcon.style.display = 'none';
       }
+    }
+
+    function updateVolumeSliderFill() {
+      const val = video.muted ? 0 : parseFloat(volumeSlider.value);
+      const pct = val * 100;
+      volumeSlider.style.setProperty('--vol-pct', pct + '%');
     }
 
     // Progress bar
@@ -1599,7 +1642,33 @@
           if (o.querySelector('span').textContent === label) o.classList.add('active');
         });
       }
+      updateHdBadge(levelIndex);
     }
+
+    function updateHdBadge(levelIndex) {
+      var height = 0;
+      if (levelIndex === -1) {
+        // Auto mode: check the currently active level
+        var currentLevel = hls.currentLevel >= 0 ? hls.currentLevel : hls.loadLevel;
+        if (currentLevel >= 0 && hls.levels[currentLevel]) {
+          height = hls.levels[currentLevel].height;
+        }
+      } else if (hls.levels[levelIndex]) {
+        height = hls.levels[levelIndex].height;
+      }
+      if (height >= 1080) {
+        hdBadge.classList.add('visible');
+      } else {
+        hdBadge.classList.remove('visible');
+      }
+    }
+
+    // Update HD badge when HLS auto-switches levels
+    hls.on(Hls.Events.LEVEL_SWITCHED, function(event, data) {
+      if (hls.currentLevel === -1) {
+        updateHdBadge(-1);
+      }
+    });
 
     qualityBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -1671,6 +1740,7 @@
           if (!video.muted && video.volume === 0) video.volume = savedVolume || 0.5;
           volumeSlider.value = video.muted ? 0 : video.volume;
           updateVolumeIcon();
+          updateVolumeSliderFill();
           showPlayerControls();
           break;
         case 'arrowup':
@@ -1679,6 +1749,7 @@
           video.muted = false;
           volumeSlider.value = video.volume;
           updateVolumeIcon();
+          updateVolumeSliderFill();
           showPlayerControls();
           break;
         case 'arrowdown':
@@ -1686,6 +1757,7 @@
           video.volume = Math.max(0, video.volume - 0.1);
           volumeSlider.value = video.volume;
           updateVolumeIcon();
+          updateVolumeSliderFill();
           showPlayerControls();
           break;
         case 'arrowleft':
