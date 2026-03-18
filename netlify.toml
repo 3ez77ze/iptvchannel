@@ -8,6 +8,12 @@
   to = "/radio.html"
   status = 200
 
+# Sports page
+[[redirects]]
+  from = "/sports"
+  to = "/sports.html"
+  status = 200
+
 # Rewrite API routes to serve the static JSON data files directly.
 # Status 200 makes these transparent rewrites (not client-visible redirects).
 

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cookiestv Sports</title>
+  <style>
+    :root {
+      --bg: #09090f;
+      --panel: #141420;
+      --panel-2: #1a1a2a;
+      --text: #ececf4;
+      --muted: #a3a3bf;
+      --accent: #22c55e;
+      --border: rgba(255,255,255,0.08);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(1000px 500px at -5% -20%, rgba(34,197,94,0.18), transparent 55%),
+        radial-gradient(800px 450px at 110% 120%, rgba(34,197,94,0.12), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+    }
+
+    .app {
+      width: min(1120px, 100%);
+      height: min(760px, calc(100vh - 32px));
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header h1 {
+      margin: 0 0 4px 0;
+      font-size: 1.08rem;
+    }
+
+    .header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #8ed0ff;
+      text-decoration: none;
+      font-size: 0.84rem;
+    }
+
+    .channel-list {
+      padding: 10px;
+      overflow: auto;
+      min-height: 0;
+    }
+
+    .channel-btn {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 12px 11px;
+      margin-bottom: 8px;
+      text-align: left;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: 0.16s ease;
+    }
+
+    .channel-btn:hover { border-color: rgba(34,197,94,0.45); }
+    .channel-btn.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(34,197,94,0.25) inset;
+    }
+
+    .viewer {
+      display: grid;
+      place-items: center;
+      background: #050509;
+      padding: 16px;
+      overflow: hidden;
+    }
+
+    .frame-wrap {
+      width: 795px;
+      height: 448px;
+      max-width: 100%;
+      max-height: 100%;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #000;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .browser-topbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      background: #10101a;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
+    .dot-red { background: #f87171; }
+    .dot-yellow { background: #fbbf24; }
+    .dot-green { background: #34d399; }
+
+    .address-bar {
+      flex: 1;
+      min-width: 0;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #161625;
+      color: var(--muted);
+      padding: 7px 12px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .player-stage {
+      position: relative;
+      min-height: 0;
+      background:
+        radial-gradient(500px 200px at 20% 0%, rgba(34,197,94,0.14), transparent 55%),
+        #07070c;
+    }
+
+    .player-controls {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      display: flex;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .action-btn {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 11px;
+      color: #f8fafc;
+      background: rgba(23,23,39,0.9);
+      text-decoration: none;
+      font-size: 0.84rem;
+      transition: 0.16s ease;
+      cursor: pointer;
+      backdrop-filter: blur(2px);
+    }
+
+    .action-btn:hover {
+      border-color: rgba(34,197,94,0.5);
+      background: #1b1b2e;
+    }
+
+    #browserFrame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #000;
+      overflow: hidden;
+    }
+
+    @media (max-width: 980px) {
+      body { overflow: auto; }
+      .app {
+        height: auto;
+        grid-template-columns: 1fr;
+      }
+      .sidebar { border-right: 0; border-bottom: 1px solid var(--border); }
+      .frame-wrap {
+        width: min(100%, 795px);
+        height: auto;
+        aspect-ratio: 795 / 448;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar">
+      <div class="header">
+        <h1>Sports Channels</h1>
+        <p>Browser-style in-page player.</p>
+        <a class="nav-link" href="/">Back to Live TV</a>
+      </div>
+      <div class="channel-list" id="channelList"></div>
+    </aside>
+
+    <section class="viewer">
+      <div class="frame-wrap">
+        <div class="browser-topbar">
+          <span class="dot dot-red" aria-hidden="true"></span>
+          <span class="dot dot-yellow" aria-hidden="true"></span>
+          <span class="dot dot-green" aria-hidden="true"></span>
+          <div class="address-bar" id="channelAddress">Select a channel</div>
+        </div>
+        <div class="player-stage">
+          <iframe id="browserFrame" title="Sports Channel Player" loading="eager" referrerpolicy="no-referrer" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+          <div class="player-controls">
+            <button class="action-btn" id="reloadPlayer" type="button">Reload Player</button>
+            <button class="action-btn" id="fullscreenPlayer" type="button">Fullscreen</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const channels = [
+      { name: "TNT Sport 1", url: "https://vivatops.store/vivo1/1.php" },
+      { name: "TNT Sport 2", url: "https://vivatops.store/vivo1/2.php" },
+      { name: "TNT Sport 3", url: "https://vivatops.store/vivo1/3.php" },
+      { name: "Bein Sports 1", url: "https://vivatops.store/vivo1/5.php" },
+      { name: "Bein Sports 2", url: "https://vivatops.store/vivo1/6.php" },
+      { name: "Sky Sports Football", url: "https://vivatops.store/vivo1/7.php" }
+    ];
+
+    const list = document.getElementById("channelList");
+    const addressBar = document.getElementById("channelAddress");
+    const reloadPlayer = document.getElementById("reloadPlayer");
+    const fullscreenPlayer = document.getElementById("fullscreenPlayer");
+    const frameWrap = document.querySelector(".frame-wrap");
+    const browserFrame = document.getElementById("browserFrame");
+    let selectedChannel = null;
+
+    function selectChannel(index) {
+      const selected = channels[index];
+      selectedChannel = selected;
+      addressBar.textContent = selected.url;
+      browserFrame.src = selected.url;
+      document.querySelectorAll(".channel-btn").forEach((btn, i) => {
+        btn.classList.toggle("active", i === index);
+      });
+    }
+
+    channels.forEach((channel, index) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "channel-btn";
+      btn.textContent = channel.name;
+      btn.addEventListener("click", () => selectChannel(index));
+      list.appendChild(btn);
+    });
+
+    reloadPlayer.addEventListener("click", () => {
+      if (!selectedChannel) return;
+      browserFrame.src = selectedChannel.url;
+    });
+
+    fullscreenPlayer.addEventListener("click", async () => {
+      try {
+        if (document.fullscreenElement) {
+          await document.exitFullscreen();
+          return;
+        }
+        if (browserFrame.requestFullscreen) {
+          await browserFrame.requestFullscreen();
+          return;
+        }
+        if (frameWrap && frameWrap.requestFullscreen) {
+          await frameWrap.requestFullscreen();
+        }
+      } catch (_) {
+      }
+    });
+
+    document.addEventListener("fullscreenchange", () => {
+      fullscreenPlayer.textContent = document.fullscreenElement ? "Exit Fullscreen" : "Fullscreen";
+    });
+
+    selectChannel(0);
+  </script>
+</body>
+</html>

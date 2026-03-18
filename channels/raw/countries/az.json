@@ -31,5 +31,38 @@
     "language": "aze",
     "country": "az",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Zy4Jk90eQw2NfP",
+    "name": "MaTV",
+    "iptv_urls": [
+      "https://str2.yodacdn.net/medeniyyettele/tracks-v3a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "aze",
+    "country": "az",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "hN3pQ8sDk1LxVa",
+    "name": "AZTV",
+    "iptv_urls": [
+      "https://str2.yodacdn.net/azertv/tracks-v3a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "aze",
+    "country": "az",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Rt8uWm5cBz9YqK",
+    "name": "atv",
+    "iptv_urls": [
+      "https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "aze",
+    "country": "az",
+    "isGeoBlocked": false
   }
 ]
