@@ -35,13 +35,13 @@
     }
 
     .app {
-      width: min(1280px, 100%);
-      height: min(820px, calc(100vh - 32px));
+      width: min(1980px, 100%);
+      height: min(1120px, calc(100vh - 4px));
       background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
       border: 1px solid var(--border);
       border-radius: 18px;
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 180px 1fr;
       overflow: hidden;
     }
 
@@ -107,13 +107,13 @@
       display: grid;
       place-items: center;
       background: #050509;
-      padding: 16px;
+      padding: 4px;
       overflow: hidden;
     }
 
     .frame-wrap {
-      width: min(100%, 1040px);
-      height: min(100%, 680px);
+      width: min(100%, 1820px);
+      height: min(100%, 1090px);
       max-width: 100%;
       max-height: 100%;
       border: 1px solid var(--border);
@@ -188,12 +188,20 @@
       height: 100%;
       min-height: 0;
       display: grid;
-      grid-template-rows: auto auto auto auto 1fr auto;
-      gap: 12px;
-      padding: 20px;
+      grid-template-rows: minmax(0, 1fr) auto auto;
+      gap: 6px;
+      padding: 8px;
       background:
         radial-gradient(500px 200px at 20% 0%, rgba(34,197,94,0.14), transparent 55%),
         #07070c;
+    }
+
+    .player-meta {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 6px 10px;
+      align-items: center;
+      min-height: 0;
     }
 
     .engine-badge {
@@ -209,16 +217,17 @@
     }
 
     .channel-title {
-      font-size: clamp(1.2rem, 1.8vw, 1.65rem);
+      font-size: clamp(1.05rem, 1.3vw, 1.3rem);
       margin: 0;
     }
 
     .channel-url {
       color: var(--muted);
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       line-break: anywhere;
       margin: 0;
       text-decoration: none;
+      grid-column: 1 / -1;
     }
 
     .channel-url:hover {
@@ -226,10 +235,32 @@
       text-decoration: underline;
     }
 
+    .sports-note {
+      margin: 0;
+      font-size: 0.76rem;
+      color: #fecaca;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      grid-column: 1 / -1;
+    }
+
+    .sports-note::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #ef4444;
+      box-shadow: 0 0 0 4px rgba(239,68,68,0.2);
+      flex: 0 0 auto;
+    }
+
     .status-text {
       margin: 0;
       color: #d9d9e6;
-      font-size: 0.92rem;
+      font-size: 0.82rem;
+      justify-self: end;
+      text-align: right;
     }
 
     .status-text.error {
@@ -240,11 +271,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
     .watch-surface {
       min-height: 0;
+      height: 100%;
       border: 1px solid var(--border);
       border-radius: 12px;
       overflow: hidden;
@@ -308,9 +340,17 @@
       }
       .sidebar { border-right: 0; border-bottom: 1px solid var(--border); }
       .frame-wrap {
-        width: min(100%, 1040px);
+        width: min(100%, 1820px);
         height: auto;
-        aspect-ratio: 1040 / 680;
+        aspect-ratio: 1820 / 1090;
+      }
+      .player-meta {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+      .status-text {
+        justify-self: start;
+        text-align: left;
       }
     }
   </style>
@@ -337,13 +377,16 @@
             <div class="address-pill" id="addressPill">about:blank</div>
           </div>
           <div class="player-stage">
-            <div class="engine-badge" id="engineBadge">Chromium player tabs</div>
-            <h2 class="channel-title" id="channelTitle">Loading channel...</h2>
-            <a class="channel-url" id="channelUrl" href="#"></a>
-            <p class="status-text" id="statusText"></p>
             <div class="watch-surface">
               <iframe class="watch-frame" id="streamFrame" title="Sports stream player" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="no-referrer"></iframe>
               <p class="watch-hint" id="watchHint">Choose a channel and press Watch In Player.</p>
+            </div>
+            <div class="player-meta">
+              <div class="engine-badge" id="engineBadge">Chromium player tabs</div>
+              <h2 class="channel-title" id="channelTitle">Loading channel...</h2>
+              <a class="channel-url" id="channelUrl" href="#"></a>
+              <p class="status-text" id="statusText"></p>
+              <p class="sports-note">all of the sports channel belong to 3rd party players.</p>
             </div>
             <div class="player-controls">
               <button class="action-btn" id="watchInPlayer" type="button">Watch In Player</button>
@@ -363,7 +406,8 @@
       { name: "TNT Sport 3", url: "https://vivatops.store/channel3" },
       { name: "Bein Sports 1", url: "https://vivatops.store/channel5" },
       { name: "Bein Sports 2", url: "https://vivatops.store/channel6" },
-      { name: "Sky Sports Football", url: "https://vivatops.store/channel7" }
+      { name: "Sky Sports Football", url: "https://vivatops.store/channel7" },
+      { name: "NBA League Pass", url: "https://vivatops.store/channel18" }
     ];
 
     const list = document.getElementById("channelList");
