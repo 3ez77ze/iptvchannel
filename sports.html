@@ -81,6 +81,7 @@
       padding: 10px;
       overflow: auto;
       min-height: 0;
+      flex: 1 1 auto;
     }
 
     .channel-btn {
@@ -112,8 +113,8 @@
     }
 
     .frame-wrap {
-      width: min(100%, 1820px);
-      height: min(100%, 1090px);
+      width: min(100%, 1140px);
+      height: auto;
       max-width: 100%;
       max-height: 100%;
       border: 1px solid var(--border);
@@ -251,13 +252,16 @@
     }
 
     .watch-surface {
+      width: min(100%, 1060px);
+      height: 465px;
+      max-height: 100%;
       min-height: 0;
-      height: 100%;
       border: 1px solid var(--border);
       border-radius: 12px;
       overflow: hidden;
       background: #020204;
       position: relative;
+      justify-self: center;
     }
 
     .watch-frame {
@@ -303,6 +307,44 @@
       background: #1b1b2e;
     }
 
+    .ad-note {
+      border-top: 1px solid var(--border);
+      padding: 10px 12px 12px;
+      font-size: 0.82rem;
+      color: #f3f4f6;
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.03));
+    }
+
+    .ad-note-link {
+      color: #86efac;
+      text-decoration: none;
+      font-weight: 700;
+      text-shadow:
+        0 0 6px rgba(134,239,172,0.95),
+        0 0 12px rgba(34,197,94,0.7),
+        0 0 18px rgba(34,197,94,0.45);
+      animation: adguard-glow 1.7s ease-in-out infinite alternate;
+    }
+
+    .ad-note-link:hover {
+      color: #bbf7d0;
+      text-decoration: underline;
+    }
+
+    @keyframes adguard-glow {
+      from {
+        text-shadow:
+          0 0 4px rgba(134,239,172,0.9),
+          0 0 10px rgba(34,197,94,0.65);
+      }
+      to {
+        text-shadow:
+          0 0 8px rgba(134,239,172,1),
+          0 0 16px rgba(34,197,94,0.85),
+          0 0 24px rgba(34,197,94,0.55);
+      }
+    }
+
     @media (max-width: 980px) {
       body { overflow: auto; }
       .app {
@@ -311,9 +353,13 @@
       }
       .sidebar { border-right: 0; border-bottom: 1px solid var(--border); }
       .frame-wrap {
-        width: min(100%, 1820px);
+        width: min(100%, 1140px);
         height: auto;
-        aspect-ratio: 1820 / 1090;
+      }
+      .watch-surface {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1060 / 465;
       }
       .player-meta {
         grid-template-columns: 1fr;
@@ -335,6 +381,10 @@
         <a class="nav-link" href="/">Back to Live TV</a>
       </div>
       <div class="channel-list" id="channelList"></div>
+      <p class="ad-note">
+        Seeing popups, try installing
+        <a class="ad-note-link" href="https://adguard.com/de/adguard-browser-extension/overview.html" target="_blank" rel="noreferrer noopener">AdGuard</a>.
+      </p>
     </aside>
 
     <section class="viewer">
@@ -369,6 +419,7 @@
       { name: "DAZN 2 Germany", url: "https://viewembed.ru/channel/DAZN2Deutschland%5BGermany%5D" },
       { name: "Player 1 (Many Channel)", url: "https://viewembed.ru/event/sporting_bodoe-glimt_1773769500" },
       { name: "Player 2", url: "https://viewembed.ru/event/fc-barcelona_newcastle_1773855900" },
+      { name: "Player 3", url: "https://viewembed.ru/event/midtjylland_nottingham_1773942300" },
       { name: "TNT Sports 1", url: "https://viewembed.ru/channel/TNTSports1%5BUK%5D" },
       { name: "TNT Sports 2", url: "https://viewembed.ru/channel/TNTSports2%5BUK%5D" },
       { name: "TNT Sports 3", url: "https://viewembed.ru/channel/TNTSports3%5BUK%5D" },
