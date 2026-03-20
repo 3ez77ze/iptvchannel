@@ -1492,5 +1492,53 @@
     "language": "eng",
     "country": "uk",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lWQ9nB2pH7vKx4",
+    "name": "ITV 1",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://viewembed.ru/channel/ITV1%5BUK%5D"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gT6rJm5XqP2sNc",
+    "name": "ITV 2",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://viewembed.ru/channel/ITV2%5BUK%5D"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uK3dLz8QaR1mVf",
+    "name": "ITV 3",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://viewembed.ru/channel/ITV3%5BUK%5D"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "pX4cNq7HtM9wSb",
+    "name": "ITV 4",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://viewembed.ru/channel/ITV4%5BUK%5D"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
   }
 ]
