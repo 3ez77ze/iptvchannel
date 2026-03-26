@@ -1275,7 +1275,7 @@
     "country": "Turkmenistan",
     "capital": "Ashgabat",
     "timeZone": "Asia/Ashgabat",
-    "hasChannels": false
+    "hasChannels": true
   },
   "TN": {
     "country": "Tunisia",

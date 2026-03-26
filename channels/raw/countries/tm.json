@@ -1,1 +1,167 @@
-[]
+[
+  {
+    "nanoid": "Tm1AltynAsyr7k",
+    "name": "TM: Altyn Asyr",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch001_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm2AsgabatTv8m",
+    "name": "TM: Aşgabat",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch006_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm3MirasTvCh9n",
+    "name": "TM: Miras",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch003_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm4OlaziTvCh5p",
+    "name": "TM: Olazi",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch005_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm5TrkmnOwazy2",
+    "name": "TM: Turkmen Owazy",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch005_400/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm6TrkmnSport3",
+    "name": "TM: Turkmenistan Sport",
+    "iptv_urls": [
+      "http://217.174.225.146/hls/ch004_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm7TrkmnstanTv",
+    "name": "TM: Turkmenistan TV",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch007_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm8YaslykTvCh2",
+    "name": "TM: Yaslyk",
+    "iptv_urls": [
+      "http://217.174.225.146/legacyhls/ch002_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Tm9AltynAsyrAl",
+    "name": "Turkmen Altyn Asyr TV",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/legacyhls/ch001_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TmAAsgabatAlph",
+    "name": "Turkmen Asgabat TV",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/legacyhls/ch006_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TmBOwazyAlphTv",
+    "name": "Turkmen Owazy",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/legacyhls/ch005_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TmCYaslykAlphT",
+    "name": "Turkmen Yaslyk TV",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/legacyhls/ch002_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TmDMirasAlphTv",
+    "name": "Turkmenistan Miras TV",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/legacyhls/ch003_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TmESportAlphTv",
+    "name": "Turkmenistan Sport",
+    "iptv_urls": [
+      "https://alpha.tv.online.tm/legacyhls/ch004_720/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TmFTrkmnTvAlph",
+    "name": "Turkmenistan TV",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/hls/ch007_400/index.m3u8?HasBahCa.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  }
+]
