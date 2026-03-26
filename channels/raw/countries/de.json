@@ -1916,5 +1916,82 @@
     "language": "deu",
     "country": "de",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bU7KqM2yFdN9sL",
+    "name": "Spongebob Schwammkopf",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-5d00e8adaab96b5635b2a005.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mR8pVx1TcJ4nQe",
+    "name": "Yu-Gi-Oh!",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-642d4493aa2d690008f0a03f.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kF3zLw7PyN2tHb",
+    "name": "Spiegel TV",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-6576c20fb3801200084786c9.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qT5aYv9DxR1mKu",
+    "name": "Spiegel TV Konflikte",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-65b9268fc798e800085add89.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jN4cWp8LsE6rZf",
+    "name": "FIFA+",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-660bfc032433010008def35a.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uP2dXk6MvQ9gSa",
+    "name": "South Park",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-60c716084d842c00085f6e64.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cH7nVr3QyL8tJe",
+    "name": "BVB Frauen",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-66337ea1307fa300082c28a0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
   }
 ]

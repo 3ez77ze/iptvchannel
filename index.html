@@ -1852,7 +1852,7 @@
       const ytUrl = ch.youtube_urls?.[0];
       const embedUrl2 = ch.embed_urls?.[0];
 
-      // Route redirect-based or insecure URLs through the server-side proxy
+      // Route external IPTV URLs through the edge proxy to avoid browser CORS failures
       let iptvUrl = rawIptvUrl;
       if (rawIptvUrl) {
         let parsedUrl = null;
@@ -1863,9 +1863,10 @@
         }
 
         const isHttpStream = parsedUrl?.protocol === 'http:';
-        const isKnownRedirectDomain = parsedUrl?.hostname?.includes('viamotionhsi.netplus.ch');
+        const isHttpsStream = parsedUrl?.protocol === 'https:';
+        const isExternalStream = parsedUrl && parsedUrl.origin !== window.location.origin;
 
-        if (isHttpStream || isKnownRedirectDomain) {
+        if ((isHttpStream || isHttpsStream) && isExternalStream) {
           iptvUrl = '/api/stream-proxy?url=' + encodeURIComponent(rawIptvUrl);
         }
       }
