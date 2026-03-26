@@ -806,10 +806,11 @@
       { name: 'Gbc Radio', country: 'Gibraltar', code: 'GI', url: 'https://s2.myradiostream.com/:32910/listen.mp3', hls: false },
       { name: 'RTL Gold', country: 'Luxembourg', code: 'LU', url: 'https://sc.rtl.lu/rtlgold', hls: false },
       { name: 'RTL Letzebuerg Radio', country: 'Luxembourg', code: 'LU', url: 'https://sc.rtl.lu/rtl', hls: false },
-      { name: 'listen.moe', country: 'Japan', code: 'JP', url: 'https://listen.moe/fallback', hls: false },
+      { name: 'listen.moe', country: 'Japan', code: 'JP', url: 'https://listen.moe/stream', hls: false, proxy: true },
       { name: 'SaintFM Community Radio', country: 'Saint Helena', code: 'SH', url: 'https://orbit.citrus3.com:2020/stream/saintfmcommunityradio/', hls: false },
       { name: 'Saint Helena Radio', country: 'Saint Helena', code: 'SH', url: 'https://s2.radio.co/s418cc827e/listen', hls: false },
       { name: 'Klan Kosova', country: 'Kosovo', code: 'XK', url: 'https://s4.radio.co/sd1d1904dc/listen', hls: false },
+      { name: 'Radio Falastini', country: 'Palestine', code: 'PS', url: 'https://rstream.hadara.ps/proxy/7alafm/stream', hls: false },
       { name: 'Quran Radio', country: 'Palestine', code: 'PS', url: 'https://quran-radio.org:8080/;', hls: false },
       { name: 'Spinning Seal FM', country: 'Sweden', code: 'SE', url: 'https://stream.zeno.fm/9q3ez3k3fchvv', hls: false },
       { name: 'Sky News Arabia', country: 'United Arab Emirates', code: 'AE', url: 'https://radio.skynewsarabia.com/stream/radio/skynewsarabia', hls: false }
@@ -866,6 +867,11 @@
       const second = normalized.charCodeAt(1);
       if (first < 65 || first > 90 || second < 65 || second > 90) return normalized;
       return String.fromCodePoint(first + 127397) + String.fromCodePoint(second + 127397);
+    }
+
+    function getPlaybackUrl(station) {
+      if (!station || !station.proxy) return station?.url || '';
+      return `/api/stream-proxy?url=${encodeURIComponent(station.url)}`;
     }
 
     function renderTweemoji(target) {
@@ -967,6 +973,7 @@
       if (index < 0 || index >= stations.length) return;
       currentStationIndex = index;
       const st = stations[index];
+      const playbackUrl = getPlaybackUrl(st);
 
       initAudioContext();
       if (audioCtx.state === 'suspended') audioCtx.resume();
@@ -982,7 +989,7 @@
       // Load new
       if (st.hls && Hls.isSupported()) {
         hlsInstance = new Hls();
-        hlsInstance.loadSource(st.url);
+        hlsInstance.loadSource(playbackUrl);
         hlsInstance.attachMedia(audioEl);
         hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
           audioEl.play();
@@ -997,7 +1004,7 @@
           }
         });
       } else {
-        audioEl.src = st.url;
+        audioEl.src = playbackUrl;
         audioEl.play();
       }
 
