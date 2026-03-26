@@ -210,5 +210,16 @@
     "language": "sqi",
     "country": "al",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "a9LmQ2xP7vNcHr",
+    "name": "AlbDreamsTV",
+    "iptv_urls": [
+      "https://live.albavision.net/live/albdreams.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
   }
 ]
