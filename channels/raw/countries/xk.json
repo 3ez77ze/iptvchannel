@@ -86,5 +86,71 @@
     "language": "sqi",
     "country": "xk",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "h4NtP9mX2qLsYw",
+    "name": "KTV",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/tracks-v4a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PXq72Tm9cHf1Ls",
+    "name": "Pro1",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-live/nng-gki-l1j-n1z/tracks-v2a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bW8nRu3Kq1LzYm",
+    "name": "Zeri TV",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/jo8-76n-lmx-tv0/tracks-v3a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Nt5vQe9Lp2XsUa",
+    "name": "Zico TV",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/tracks-v2a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Jm4rKd7Vq9PwXe",
+    "name": "ATV",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/tracks-v2a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Yc6tBn2Hr8MvQp",
+    "name": "TV News",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/js0-h8f-ifx-29f/tracks-v3a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
   }
 ]

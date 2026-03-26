@@ -1,0 +1,24 @@
+[
+  {
+    "nanoid": "r8VcL1pQ4mXnAs",
+    "name": "312TV",
+    "iptv_urls": [
+      "http://176.126.166.43:1935/live/312musik/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "kir",
+    "country": "kg",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "u3KpZ7tM5qWrNd",
+    "name": "Manas",
+    "iptv_urls": [
+      "http://212.42.111.152:8080/hls/manas.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "kir",
+    "country": "kg",
+    "isGeoBlocked": false
+  }
+]

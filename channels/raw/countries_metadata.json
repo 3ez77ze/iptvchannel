@@ -657,7 +657,7 @@
     "country": "Kyrgyzstan",
     "capital": "Bishkek",
     "timeZone": "Asia/Bishkek",
-    "hasChannels": false
+    "hasChannels": true
   },
   "KH": {
     "country": "Cambodia",
