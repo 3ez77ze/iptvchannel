@@ -4408,6 +4408,17 @@
     "isGeoBlocked": true
   },
   {
+    "nanoid": "tM1qZp5RwK8dXu",
+    "name": "Fox Sports (America)",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-5a74b8e1e22a61737979c6bf.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "3XWzDx4FnKV7NI",
     "name": "Fox Sports en Espanol",
     "iptv_urls": [
@@ -7647,6 +7658,17 @@
     "language": "eng",
     "country": "us",
     "isGeoBlocked": true
+  },
+  {
+    "nanoid": "yL6bNk4SvT2fQa",
+    "name": "One Piece (America)",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-5f7790b3ed0c88000720b241.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
   },
   {
     "nanoid": "pCRvE4DABiQZWc",
