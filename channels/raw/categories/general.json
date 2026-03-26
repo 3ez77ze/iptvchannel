@@ -13811,5 +13811,17 @@
     "language": "sqi",
     "country": "al",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rTsHsAtLv3Q7Xw",
+    "name": "RTSH SAT",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "/rtsh-sat.html"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
   }
 ]
