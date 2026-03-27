@@ -1151,6 +1151,30 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "rtDocEngUkCh01",
+    "name": "RT Documentary English",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://odysee.com/$/embed/@RT:fd/livestream_RT:d"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "rtNewsUkCh01002",
+    "name": "RT News",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://odysee.com/$/embed/@RT:fd/livestream_RT:d"
+    ],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "WQqSZQl27UG0sD",
     "name": "Safeer TV",
     "iptv_urls": [
