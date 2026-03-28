@@ -1187,12 +1187,6 @@
     "timeZone": "America/Paramaribo",
     "hasChannels": true
   },
-  "SS": {
-    "country": "South Sudan",
-    "capital": "Juba",
-    "timeZone": "Africa/Juba",
-    "hasChannels": false
-  },
   "ST": {
     "country": "São Tomé and Príncipe",
     "capital": "São Tomé",
@@ -1359,7 +1353,7 @@
     "country": "Vatican City",
     "capital": "Vatican City",
     "timeZone": "Europe/Vatican",
-    "hasChannels": false
+    "hasChannels": true
   },
   "VC": {
     "country": "Saint Vincent and the Grenadines",

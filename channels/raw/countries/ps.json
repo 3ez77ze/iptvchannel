@@ -1,5 +1,16 @@
 [
   {
+    "nanoid": "Aq3mLz9pTnV2xR",
+    "name": "Al-Aqsa TV",
+    "iptv_urls": [
+      "http://167.172.161.13/hls/feedspare/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "PtKPvCho1AKJIx",
     "name": "Al Madina",
     "iptv_urls": [
@@ -22,10 +33,43 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "Xp7dQm2rFs8kLn",
+    "name": "Ajya Lint TV",
+    "iptv_urls": [
+      "http://htvajyalint.mada.ps:8888/ajyalint/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "foEVFoZwWIxidj",
     "name": "Falastini TV",
     "iptv_urls": [
       "https://rp.tactivemedia.com/palestiniantv_source/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Rk1uVb4nQe7sPd",
+    "name": "Hala RamallahTV",
+    "iptv_urls": [
+      "https://halaramallahtv.com:2053/HRamallah-Tv/HalaRamallah/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Mz8kTq1wYh6cNd",
+    "name": "Holy Quran TV",
+    "iptv_urls": [
+      "http://streaming.zaytonatube.com:8080/holyquran/holyquran/video.m3u8"
     ],
     "youtube_urls": [],
     "language": "ara",
@@ -103,7 +147,7 @@
     "nanoid": "szNEw4C0KNRO1w",
     "name": "Radio Albalad TV",
     "iptv_urls": [
-      "https://streaming.zaytonatube.com:8081/radioalbalad/radioalbalad/index.m3u8"
+      "http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8"
     ],
     "youtube_urls": [],
     "language": "ara",
@@ -136,7 +180,7 @@
     "nanoid": "zJ9zGl534t9s19",
     "name": "Watar TV",
     "iptv_urls": [
-      "https://htvint.mada.ps/orient/index.m3u8"
+      "https://htvint.mada.ps/orient/tracks-v1a1/mono.m3u8"
     ],
     "youtube_urls": [],
     "language": "ara",
