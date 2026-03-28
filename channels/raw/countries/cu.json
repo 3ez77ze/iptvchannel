@@ -9,5 +9,93 @@
     "language": "spa",
     "country": "cu",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuClave7R2mQ4x",
+    "name": "Canal Clave (Cuba)",
+    "iptv_urls": [
+      "https://tv.picta.cu/clave/clave_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuEduca9LmN5tR",
+    "name": "Canal Educativo",
+    "iptv_urls": [
+      "https://tv.picta.cu/educativo/educativo_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuEdu22vB6sKqP",
+    "name": "Canal Educativo 2",
+    "iptv_urls": [
+      "https://tv.picta.cu/educativo2/educativo2_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuHabN4pX8dJ3s",
+    "name": "Canal Habana",
+    "iptv_urls": [
+      "https://tv.picta.cu/infantil/infantil_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuVisA7mL1pQ8d",
+    "name": "Cubavision",
+    "iptv_urls": [
+      "https://tv.picta.cu/cubavision/cubavision_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuCviM5tR9nW2x",
+    "name": "Cubavision International",
+    "iptv_urls": [
+      "https://tv.picta.cu/cvi/cvi_0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuMulti8qK3vN1p",
+    "name": "Multivision",
+    "iptv_urls": [
+      "https://tv.picta.cu/multivision/multivision_1.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CuRebel6sT4mY9k",
+    "name": "Tele Rebelde",
+    "iptv_urls": [
+      "https://tv.picta.cu/telerebelde/telerebelde_1.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "spa",
+    "country": "cu",
+    "isGeoBlocked": false
   }
 ]
