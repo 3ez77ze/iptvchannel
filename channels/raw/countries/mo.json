@@ -1,0 +1,123 @@
+[
+  {
+    "nanoid": "TdmOuMun91Mac1",
+    "name": "TDM Ou Mun Ch.91",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/ch1/ch1.live/chunklist_w2032172032.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ChMacau92MoC2A",
+    "name": "Channel Macau Ch.92",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/ch2/ch2.live/chunklist_w1960098578.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TdmSport93MoC3",
+    "name": "TDM Sport Ch.93",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/ch4/sport_ch4.live/chunklist_w286697017.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TdmInfo94MoC4A",
+    "name": "TDM Info Ch.94",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/ch5/info_ch5.live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TdmEnt95MoC5Aa",
+    "name": "TDM Entertainment Ch.95",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/ch6/hd_ch6.live/chunklist_w1173638127.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OuMunMac96MoC6",
+    "name": "Ou Mun-Macau Ch.96",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/ch3/ch3.live/chunklist_w1253253885.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Cctv171Macao7A",
+    "name": "CCTV-1 Ch.71",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/cgtn/cgtn71/chunklist_w860339085.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Cgtn73MacaoC8A",
+    "name": "CGTN Ch.73",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/cgtn/cgtn73/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "CGTNDoc74MoC9A",
+    "name": "CGTN-Documentary Ch.74",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/cgtn/cgtn74/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MacaoCh21M0CAA",
+    "name": "Ch.21",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/tv/ch21.live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MacaoCh22M0CBB",
+    "name": "Ch.22",
+    "iptv_urls": [
+      "https://globallive.tdm.com.mo/tv/ch22.live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "zho",
+    "country": "mo",
+    "isGeoBlocked": false
+  }
+]
