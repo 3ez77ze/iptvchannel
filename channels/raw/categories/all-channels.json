@@ -25728,6 +25728,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "3W8qmP2LxJr7sV",
+    "name": "KCTV (Low Quality)",
+    "iptv_urls": [
+      "https://streamer.nknews.org/tvhls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "kor",
+    "country": "kp",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "ijWQA3s6NT8hZx",
     "name": "Kpop Mix",
     "iptv_urls": [

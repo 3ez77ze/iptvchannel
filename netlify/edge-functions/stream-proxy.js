@@ -1,6 +1,7 @@
 export default async (request) => {
   const url = new URL(request.url);
   const streamUrl = url.searchParams.get("url");
+  const clientReferer = url.searchParams.get("referer");
 
   const isPrivateIp = (hostname) => {
     const normalized = hostname.trim().toLowerCase();
@@ -59,9 +60,65 @@ export default async (request) => {
     return new Response("Host not allowed", { status: 403 });
   }
 
+  const STREAM_HOST_PROFILES = {
+    "streamer.nknews.org": {
+      referer: "https://kcnawatch.org/korea-central-tv-livestream/",
+      origin: "https://kcnawatch.org",
+    },
+  };
+
+  const buildUpstreamHeaders = (targetUrl) => {
+    const target = new URL(targetUrl);
+    const headers = new Headers();
+
+    const passthroughHeaders = [
+      "accept",
+      "accept-language",
+      "if-none-match",
+      "if-modified-since",
+      "range",
+    ];
+
+    for (const name of passthroughHeaders) {
+      const value = request.headers.get(name);
+      if (value) headers.set(name, value);
+    }
+
+    if (!headers.has("accept")) {
+      headers.set("accept", "*/*");
+    }
+    headers.set(
+      "user-agent",
+      "Mozilla/5.0 (compatible; NetlifyEdgeStreamProxy/1.0)"
+    );
+
+    const hostProfile = STREAM_HOST_PROFILES[target.hostname.toLowerCase()];
+    if (hostProfile) {
+      headers.set("referer", hostProfile.referer);
+      headers.set("origin", hostProfile.origin);
+      return headers;
+    }
+
+    if (clientReferer) {
+      try {
+        const parsedClientReferer = new URL(clientReferer);
+        if (["http:", "https:"].includes(parsedClientReferer.protocol)) {
+          headers.set("referer", parsedClientReferer.toString());
+          headers.set("origin", parsedClientReferer.origin);
+        }
+      } catch {
+        // Ignore invalid referer query values.
+      }
+    }
+
+    return headers;
+  };
+
   try {
-    // Fetch the stream URL, following redirects automatically
-    const response = await fetch(streamUrl);
+    // Fetch the stream URL, following redirects automatically.
+    const response = await fetch(streamUrl, {
+      headers: buildUpstreamHeaders(streamUrl),
+    });
     const contentType = response.headers.get("content-type") || "";
 
     const corsHeaders = {
@@ -101,19 +158,45 @@ export default async (request) => {
         return `/api/stream-proxy?url=${encodeURIComponent(absUrl)}`;
       });
 
+      const manifestHeaders = new Headers({
+        ...corsHeaders,
+        "Content-Type": "application/vnd.apple.mpegurl",
+      });
+      const cacheControl = response.headers.get("cache-control");
+      if (cacheControl) {
+        manifestHeaders.set("Cache-Control", cacheControl);
+      }
+
       return new Response(rewritten.join("\n"), {
+        status: response.status,
         headers: {
-          ...corsHeaders,
-          "Content-Type": "application/vnd.apple.mpegurl",
+          ...Object.fromEntries(manifestHeaders.entries()),
         },
       });
     }
 
-    // For segments (ts, aac, etc.), stream through directly
+    // For segments (ts, aac, etc.), stream through directly.
+    const segmentHeaders = new Headers({
+      ...corsHeaders,
+      "Content-Type": contentType || "video/mp2t",
+    });
+    const contentLength = response.headers.get("content-length");
+    if (contentLength) {
+      segmentHeaders.set("Content-Length", contentLength);
+    }
+    const acceptRanges = response.headers.get("accept-ranges");
+    if (acceptRanges) {
+      segmentHeaders.set("Accept-Ranges", acceptRanges);
+    }
+    const contentRange = response.headers.get("content-range");
+    if (contentRange) {
+      segmentHeaders.set("Content-Range", contentRange);
+    }
+
     return new Response(response.body, {
+      status: response.status,
       headers: {
-        ...corsHeaders,
-        "Content-Type": contentType || "video/mp2t",
+        ...Object.fromEntries(segmentHeaders.entries()),
       },
     });
   } catch (err) {
