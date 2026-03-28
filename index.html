@@ -1865,11 +1865,17 @@
       return scored[0]?.candidate || '';
     }
 
+    const smrtvEmbedToFunction = {
+      '/san-marino-rtv.html': '/.netlify/functions/san-marino-rtv',
+      '/san-marino-rtv-sport.html': '/.netlify/functions/san-marino-rtv-sport',
+    };
+
     async function resolveSanMarinoRtvStream(embedUrl) {
-      if (embedUrl !== '/san-marino-rtv.html') return '';
+      const fnUrl = smrtvEmbedToFunction[embedUrl];
+      if (!fnUrl) return '';
 
       try {
-        const resp = await fetch('/.netlify/functions/san-marino-rtv', { cache: 'no-store' });
+        const resp = await fetch(fnUrl, { cache: 'no-store' });
         if (!resp.ok) return '';
         const data = await resp.json();
         if (!data || !data.live || !data.url) return '';
@@ -1891,7 +1897,7 @@
       const ytUrl = ch.youtube_urls?.[0];
       const embedUrl2 = ch.embed_urls?.[0];
 
-      if (!rawIptvUrl && embedUrl2 === '/san-marino-rtv.html') {
+      if (!rawIptvUrl && smrtvEmbedToFunction[embedUrl2]) {
         rawIptvUrl = await resolveSanMarinoRtvStream(embedUrl2);
         if (!currentChannel || currentChannel.nanoid !== ch.nanoid) return;
       }

@@ -10,5 +10,17 @@
     "language": "ita",
     "country": "sm",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "f1kz2ZyPaF7uTz",
+    "name": "RTV Sport",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "/san-marino-rtv-sport.html"
+    ],
+    "language": "ita",
+    "country": "sm",
+    "isGeoBlocked": false
   }
 ]
