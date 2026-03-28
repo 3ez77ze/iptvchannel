@@ -12796,9 +12796,20 @@
   },
   {
     "nanoid": "zJ9zGl534t9s19",
+    "name": "Watar 96 FM Tv",
+    "iptv_urls": [
+      "https://svs.itworkscdn.net/smcwatarlive/smcwatar/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "q3kYx7mV9nTa2Lp",
     "name": "Watar TV",
     "iptv_urls": [
-      "https://htvint.mada.ps/orient/index.m3u8"
+      "https://htvint.mada.ps/orient/tracks-v1a1/mono.m3u8"
     ],
     "youtube_urls": [],
     "language": "ara",
