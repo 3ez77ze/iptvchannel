@@ -1865,7 +1865,21 @@
       return scored[0]?.candidate || '';
     }
 
-    function playChannel(ch, el) {
+    async function resolveSanMarinoRtvStream(embedUrl) {
+      if (embedUrl !== '/san-marino-rtv.html') return '';
+
+      try {
+        const resp = await fetch('/.netlify/functions/san-marino-rtv', { cache: 'no-store' });
+        if (!resp.ok) return '';
+        const data = await resp.json();
+        if (!data || !data.live || !data.url) return '';
+        return extractLikelyStreamUrl(data.url);
+      } catch (_) {
+        return '';
+      }
+    }
+
+    async function playChannel(ch, el) {
       document.querySelectorAll('.channel-item').forEach(i => i.classList.remove('active'));
       el.classList.add('active');
       placeholder.style.display = 'none';
@@ -1873,9 +1887,14 @@
       updateStarButton();
       showNowPlaying(ch.name);
 
-      const rawIptvUrl = extractLikelyStreamUrl(ch.iptv_urls?.[0]);
+      let rawIptvUrl = extractLikelyStreamUrl(ch.iptv_urls?.[0]);
       const ytUrl = ch.youtube_urls?.[0];
       const embedUrl2 = ch.embed_urls?.[0];
+
+      if (!rawIptvUrl && embedUrl2 === '/san-marino-rtv.html') {
+        rawIptvUrl = await resolveSanMarinoRtvStream(embedUrl2);
+        if (!currentChannel || currentChannel.nanoid !== ch.nanoid) return;
+      }
 
       // Route external IPTV URLs through the edge proxy to avoid browser CORS failures
       let iptvUrl = rawIptvUrl;

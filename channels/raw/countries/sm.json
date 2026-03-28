@@ -10,16 +10,5 @@
     "language": "ita",
     "country": "sm",
     "isGeoBlocked": false
-  },
-  {
-    "nanoid": "Kx9mRvT2pLwQnF",
-    "name": "San Marino RTV Sport",
-    "iptv_urls": [
-      "https://smrtvlive.b-cdn.net/bcdn_token=hlBAxdr7YUFKwfN97mkxGF1iitrcWqiItdk7p83L7oU&token_path=%2Flive&expires=1772977097/live/smrtv-ch02/playlist.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "ita",
-    "country": "sm",
-    "isGeoBlocked": false
   }
 ]
