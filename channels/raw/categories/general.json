@@ -13725,10 +13725,11 @@
   {
     "nanoid": "JIqBJbr6SisBjJ",
     "name": "San Marino RTV",
-    "iptv_urls": [
-      "https://smrtvlive.b-cdn.net/bcdn_token=nwlUdjk99c4PPDFUeXOqsBUlwtw1JfwOAQYEO8U4OGI&token_path=%2Flive&expires=1772977038/live/smrtv-ch01/playlist.m3u8"
-    ],
+    "iptv_urls": [],
     "youtube_urls": [],
+    "embed_urls": [
+      "/san-marino-rtv.html"
+    ],
     "language": "ita",
     "country": "sm",
     "isGeoBlocked": false
