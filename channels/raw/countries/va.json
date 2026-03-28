@@ -1,10 +1,11 @@
 [
   {
     "nanoid": "Va6nQp2kYt9mLs",
-    "name": "Vatican Media News",
+    "name": "Vatican Media Live",
     "iptv_urls": [],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/03pYP2Nmreo"
+    "youtube_urls": [],
+    "embed_urls": [
+      "/vatican-live.html"
     ],
     "language": "ita",
     "country": "va",
