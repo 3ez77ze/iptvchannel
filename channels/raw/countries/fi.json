@@ -11,6 +11,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "f8Y0jMcLF7n2Ja",
+    "name": "Alfa TV",
+    "iptv_urls": [
+      "https://irrtv2.digitacdn.net/live/ott/irrtv/irrtv_av576p.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "ZsOJRyJmqi98FC",
     "name": "BBC Top Gear Finland",
     "iptv_urls": [
@@ -44,6 +55,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "T3mPH7Q6a0JdWy",
+    "name": "frii TV",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/frii/live011774121264.m3u8?timestamp=2026-03-28-11-30&tz=Europe-Berlin"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "RXkTjTqpb8UDSl",
     "name": "Himlen TV7",
     "iptv_urls": [
@@ -70,6 +92,17 @@
     "name": "Jim",
     "iptv_urls": [
       "https://live-fi.tvkaista.net/jim/live.m3u8?hd=true"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "K0aYV8pLc4mNdT",
+    "name": "Kutonen",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/kutonen/live011774670536.m3u8?timestamp=1999-03-28-11-35&tz=Europe-Berka"
     ],
     "youtube_urls": [],
     "language": "fin",
@@ -147,6 +180,28 @@
     "name": "MTV3",
     "iptv_urls": [
       "https://live-fi.tvkaista.net/mtv3/live.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Q8vL4nDbS1xPwR",
+    "name": "National Geographic",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/national-geographic/live011774670361.m3u8?timestamp=2026-03-28-11-27&tz=Europe-Berlin"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bN5mFkP0sL9tQe",
+    "name": "Nelonen",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/nelonen/live011774670318.m3u8?timestamp=2026-03-28-11-38&tz=Europe-Berlin"
     ],
     "youtube_urls": [],
     "language": "fin",
@@ -253,6 +308,39 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "xA9jL3pQm7cVtK",
+    "name": "TLC",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/tlc/live011774670611.m3u8?timestamp=2026-03-28-11-36&tz=Europe-Berlin"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H2qWm8zNf6yRkD",
+    "name": "TV 5",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/tv5/live011774670362.m3u8?timestamp=2026-03-28-11-36&tz=Europe-Berlin"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "L6pQs1xVm4kZrN",
+    "name": "Viaplay TV",
+    "iptv_urls": [
+      "https://solmu.tvkaista.net/viaplay-tv/live011774684599.m3u8?timestamp=2025-03-28-11-26&tz=Europe-Berlin"
+    ],
+    "youtube_urls": [],
+    "language": "fin",
+    "country": "fi",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "QkAeXYqD57Cduc",
     "name": "YLE TV 1",
     "iptv_urls": [
@@ -281,7 +369,7 @@
     "name": "YLE TV Teema & Fem",
     "iptv_urls": [
       "https://yletvworld.akamaized.net/hls/live/622547/yletvteemafemw/index.m3u8",
-      "https://live-fi.tvkaista.net/yle-teema-fem/live.m3u8"
+      "https://live-fi.tvkaista.net/yle-teema-fem/live.m3u8?hd=true"
     ],
     "youtube_urls": [],
     "language": "fin",
