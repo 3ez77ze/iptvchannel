@@ -152,5 +152,49 @@
     "language": "sqi",
     "country": "xk",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Rd8uLp3Qv7NzKm",
+    "name": "TV Dielli",
+    "iptv_urls": [
+      "https://stream.tvdielli.com/hls/dielli/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Fw2sXn6Jq9BcTe",
+    "name": "Opoja TV",
+    "iptv_urls": [
+      "http://ip.opoja.tv:1935/tvopoja/tvopoja/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Mh5dKr1Wy8PuGs",
+    "name": "TV BESA",
+    "iptv_urls": [
+      "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/ehn-g2o-v7w-nh4/tracks-v3a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Zt4nHv7Qx2LmPc",
+    "name": "TV Arbëria 2",
+    "iptv_urls": [
+      "https://t1.tvmak.com/tv/tvarberia2.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "xk",
+    "isGeoBlocked": false
   }
 ]
