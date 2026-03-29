@@ -47790,14 +47790,13 @@
   {
     "nanoid": "R9UIEd40h1hSAD",
     "name": "Tele Tchad",
-    "iptv_urls": [],
+    "iptv_urls": [
+      "https://tchadlive.streamakaci.tv/str_tchad_tchad/str_tchad_multi/str_tchad_tchad/str_tchad_tchad_1080p/chunks.m3u8"
+    ],
     "youtube_urls": [],
     "language": "fra",
     "country": "td",
-    "isGeoBlocked": false,
-    "embed_urls": [
-      "https://webcast.streamakaci.com/tchad/"
-    ]
+    "isGeoBlocked": false
   },
   {
     "nanoid": "arUwONnDyiIo6o",
