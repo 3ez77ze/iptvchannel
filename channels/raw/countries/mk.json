@@ -76,5 +76,82 @@
     "language": "sqi",
     "country": "mk",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xdForrnpc9WLwi",
+    "name": "CoolTV",
+    "iptv_urls": [
+      "https://stream.nasatv.com.mk/cooltv/hls/cooltv_live.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wimCvTcbmU1oNb",
+    "name": "Folk Club",
+    "iptv_urls": [
+      "http://tv1.intv.mk:1935/live2/folkklub/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AGyOnXCnVseU2n",
+    "name": "Folk TV",
+    "iptv_urls": [
+      "https://stream.nasatv.com.mk/folktv/hls/folktv_live.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NRFQJa6EBbsZoi",
+    "name": "Jazz TV",
+    "iptv_urls": [
+      "https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "842O1PYjoFVgVj",
+    "name": "Love TV",
+    "iptv_urls": [
+      "https://stream.nasatv.com.mk/lovetv/hls/lovetv_live.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "6XUYUc4wSKCePq",
+    "name": "Nova TV",
+    "iptv_urls": [
+      "http://151.236.247.171:8080/nova/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4NTJh5W9b9JErn",
+    "name": "Tv Zdravkin",
+    "iptv_urls": [
+      "http://zdravkin.hugo.mk:1935/live/zdravkin/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "mkd",
+    "country": "mk",
+    "isGeoBlocked": false
   }
 ]
