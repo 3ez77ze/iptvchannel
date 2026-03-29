@@ -11,6 +11,61 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "HX8mV2qLp4sJ9N",
+    "name": "Hayat (1080p)",
+    "iptv_urls": [
+      "http://158.180.39.89:5033/hayat.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "bos",
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fQ2nW7rTk5pZ1D",
+    "name": "Hayat Folk (1080p)",
+    "iptv_urls": [
+      "http://158.180.39.89:5033/folk.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "bos",
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uN6cR3xBy8mK4T",
+    "name": "Hayat Music (1080p)",
+    "iptv_urls": [
+      "http://158.180.39.89:5033/music.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "bos",
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "pL9vD5sGh2qX7M",
+    "name": "Hayat Plus (1080p)",
+    "iptv_urls": [
+      "http://158.180.39.89:5033/hayatplus.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "bos",
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tK4yB1nCf8wR6P",
+    "name": "Hayatovci (1080p)",
+    "iptv_urls": [
+      "http://158.180.39.89:5033/hayatovci.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "bos",
+    "country": "ba",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "yLVZgzeSuuMtfC",
     "name": "NTV IC Kakanj",
     "iptv_urls": [
