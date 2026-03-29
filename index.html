@@ -1870,6 +1870,9 @@
       '/san-marino-rtv.html': '/.netlify/functions/san-marino-rtv',
       '/san-marino-rtv-sport.html': '/.netlify/functions/san-marino-rtv-sport',
     };
+    const directPlaybackHosts = new Set([
+      'bpcdnmanprod.nexttv.ht.hr',
+    ]);
 
     async function resolveSanMarinoRtvStream(embedUrl) {
       const fnUrl = smrtvEmbedToFunction[embedUrl];
@@ -1903,7 +1906,8 @@
         if (!currentChannel || currentChannel.nanoid !== ch.nanoid) return;
       }
 
-      // Route external IPTV URLs through the edge proxy to avoid browser CORS failures
+      // Route most external IPTV URLs through the edge proxy to avoid browser CORS failures.
+      // Some providers (e.g., HRT via nexttv.ht.hr) block datacenter/anonymous IPs, so they must stay direct.
       let iptvUrl = rawIptvUrl;
       if (rawIptvUrl) {
         let parsedUrl = null;
@@ -1916,8 +1920,9 @@
         const isHttpStream = parsedUrl?.protocol === 'http:';
         const isHttpsStream = parsedUrl?.protocol === 'https:';
         const isExternalStream = parsedUrl && parsedUrl.origin !== window.location.origin;
+        const hostRequiresDirectPlayback = parsedUrl && directPlaybackHosts.has(parsedUrl.hostname.toLowerCase());
 
-        if ((isHttpStream || isHttpsStream) && isExternalStream) {
+        if ((isHttpStream || isHttpsStream) && isExternalStream && !hostRequiresDirectPlayback) {
           iptvUrl = '/api/stream-proxy?url=' + encodeURIComponent(rawIptvUrl);
         }
       }
