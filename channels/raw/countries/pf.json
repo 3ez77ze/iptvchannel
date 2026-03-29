@@ -1,0 +1,13 @@
+[
+  {
+    "nanoid": "pfTahitiTV6rA91",
+    "name": "Tahiti TV",
+    "iptv_urls": [
+      "https://tntv-samsung-fr.amagi.tv/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fra",
+    "country": "pf",
+    "isGeoBlocked": false
+  }
+]

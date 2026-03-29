@@ -44,16 +44,5 @@
     "language": "ara",
     "country": "dz",
     "isGeoBlocked": false
-  },
-  {
-    "nanoid": "AL24nWs9qR7mP2",
-    "name": "AL24News",
-    "iptv_urls": [
-      "https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/corp/66_al24_u4yga6h_1080p/chunks.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "ara",
-    "country": "dz",
-    "isGeoBlocked": false
   }
 ]
