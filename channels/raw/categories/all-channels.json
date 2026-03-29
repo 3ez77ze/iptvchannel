@@ -22100,7 +22100,7 @@
     "nanoid": "slWlDUbLMcYHFX",
     "name": "HRT 1",
     "iptv_urls": [
-      "https://webtvstream.bhtelecom.ba/hrt1.m3u8"
+      "https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "hrv",
@@ -22111,7 +22111,7 @@
     "nanoid": "QFU5ZJnYCQuugW",
     "name": "HRT 2",
     "iptv_urls": [
-      "https://webtvstream.bhtelecom.ba/hrt2.m3u8"
+      "https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "hrv",
@@ -22122,7 +22122,7 @@
     "nanoid": "T7TXmLpBD9IwXz",
     "name": "HRT 3",
     "iptv_urls": [
-      "https://webtvstream.bhtelecom.ba/hrt3.m3u8"
+      "https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "hrv",
@@ -62579,6 +62579,39 @@
     "youtube_urls": [],
     "language": "eng",
     "country": "hk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dRW7mV0oLpQ2xC",
+    "name": "Sandzak TV (576p)",
+    "iptv_urls": [
+      "https://streaming.iptv.nextfiber.rs/nxt004/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "srp",
+    "country": "rs",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "n3YfUb1Te8KsWm",
+    "name": "Sos Kanal Plus",
+    "iptv_urls": [
+      "http://53be5ef2d13aa.streamlock.net/soskanalplus/soskanalplus.stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "srp",
+    "country": "rs",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Lw5Nh2Qe8sVp1r",
+    "name": "HRT 4",
+    "iptv_urls": [
+      "https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "hrv",
+    "country": "hr",
     "isGeoBlocked": false
   }
 ]
