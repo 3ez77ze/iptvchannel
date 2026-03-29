@@ -1011,7 +1011,7 @@
     "country": "French Polynesia",
     "capital": "Papeete",
     "timeZone": "Pacific/Tahiti",
-    "hasChannels": false
+    "hasChannels": true
   },
   "PG": {
     "country": "Papua New Guinea",
