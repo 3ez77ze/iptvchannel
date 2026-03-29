@@ -22,6 +22,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "R8gk2wQmLt7pVd",
+    "name": "DSTV",
+    "iptv_urls": [
+      "http://46.249.95.140:8081/hls/data.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "bul",
+    "country": "bg",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "z7zMm8Am4tFsxt",
     "name": "Evrokom",
     "iptv_urls": [

@@ -341,5 +341,38 @@
     "language": "ell",
     "country": "gr",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5pqvjIQk4EHCz8",
+    "name": "Aeolos TV",
+    "iptv_urls": [
+      "https://cdn.istoikona.com/aeolostv/live/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ell",
+    "country": "gr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OTIXSLYkXfwGaV",
+    "name": "ALEERT",
+    "iptv_urls": [
+      "https://itv.streams.ovh/ALEERT/ALEERT/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ell",
+    "country": "gr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "XgycdOCEcDHYg9",
+    "name": "bestTV HD",
+    "iptv_urls": [
+      "http://push-int.siliconweb.com/bestTV/stream/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ell",
+    "country": "gr",
+    "isGeoBlocked": false
   }
 ]
