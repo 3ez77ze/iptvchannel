@@ -1845,6 +1845,7 @@
       const trimmed = rawValue.trim();
       if (!trimmed) return '';
       if (/^https?:\/\//i.test(trimmed)) return trimmed;
+      if (trimmed.startsWith('/')) return trimmed;
 
       const normalized = trimmed.replace(/\\\//g, '/');
       const matches = normalized.match(/https?:\/\/[^\s"'<>\\)]+/gi);
