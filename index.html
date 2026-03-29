@@ -1140,7 +1140,7 @@
         <div id="displayCountry" class="country-name">Select Country</div>
         <div id="displayCapital" class="capital-name">-</div>
       </div>
-      <div id="displayTime" class="local-time">--:-- --</div>
+      <div id="displayTime" class="local-time">--:--:-- --</div>
     </div>
 
     <div class="weather-bar" id="weatherBar">
@@ -1303,6 +1303,47 @@
       );
     }
 
+    function normalizeCountryCode(code) {
+      if (!code) return '';
+      const normalized = code.toUpperCase();
+      return normalized === 'UK' ? 'GB' : normalized;
+    }
+
+    function isValidTimeZone(tz) {
+      if (!tz) return false;
+      try {
+        new Intl.DateTimeFormat('en-US', { timeZone: tz }).format(new Date());
+        return true;
+      } catch (_) {
+        return false;
+      }
+    }
+
+    function formatLocalTime(tz) {
+      const safeTimeZone = isValidTimeZone(tz) ? tz : 'UTC';
+      const parts = new Intl.DateTimeFormat('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true,
+        timeZone: safeTimeZone
+      }).formatToParts(new Date());
+
+      let hour = '';
+      let minute = '';
+      let second = '';
+      let dayPeriod = '';
+
+      parts.forEach(part => {
+        if (part.type === 'hour') hour = part.value;
+        if (part.type === 'minute') minute = part.value;
+        if (part.type === 'second') second = part.value;
+        if (part.type === 'dayPeriod') dayPeriod = part.value.toLowerCase();
+      });
+
+      return `${hour}:${minute}:${second} ${dayPeriod}`;
+    }
+
     // Parse Twemoji for an element, with custom flag overrides
     function parseTwemoji(el) {
       if (typeof twemoji !== 'undefined') {
@@ -1405,10 +1446,10 @@
 
       updateTime(countryData.timeZone);
       if (timeInterval) clearInterval(timeInterval);
-      timeInterval = setInterval(() => updateTime(countryData.timeZone), 60000);
+      timeInterval = setInterval(() => updateTime(countryData.timeZone), 1000);
 
       if (countryData.capital) {
-        fetchWeather(countryData.capital, code);
+        fetchWeather(countryData.capital, code, countryData.timeZone);
       }
 
       document.getElementById('channelList').innerHTML = '<div class="loading-skeleton"><div class="loading-spinner"></div> Loading channels...</div>';
@@ -1418,9 +1459,9 @@
     }
 
     function updateTime(tz) {
-      if (!tz) return;
-      const options = { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: tz };
-      document.getElementById('displayTime').textContent = new Intl.DateTimeFormat('en-US', options).format(new Date());
+      const displayTimeEl = document.getElementById('displayTime');
+      displayTimeEl.textContent = formatLocalTime(tz);
+      displayTimeEl.title = isValidTimeZone(tz) ? tz : 'UTC';
     }
 
     function filterChannels(q) {
@@ -2035,7 +2076,7 @@
       setTimeout(() => toast.classList.remove('show'), 2000);
     }
 
-    async function fetchWeather(capital, countryCode) {
+    async function fetchWeather(capital, countryCode, timeZone) {
       const cacheKey = countryCode.toUpperCase();
       if (weatherCache[cacheKey]) {
         displayWeather(weatherCache[cacheKey]);
@@ -2050,15 +2091,17 @@
       document.getElementById('weatherDetails').textContent = '';
 
       try {
-        const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(capital)}&count=1&language=en`);
+        const normalizedCountryCode = normalizeCountryCode(countryCode);
+        const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(capital)}&count=1&language=en&countryCode=${encodeURIComponent(normalizedCountryCode)}`);
         const geoData = await geoRes.json();
         if (!geoData.results || geoData.results.length === 0) {
           weatherBar.classList.remove('visible');
           return;
         }
         const { latitude, longitude } = geoData.results[0];
+        const safeTimeZone = isValidTimeZone(timeZone) ? timeZone : 'auto';
 
-        const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,wind_speed_10m,weather_code`);
+        const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&timezone=${encodeURIComponent(safeTimeZone)}&current=temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,wind_speed_10m,weather_code`);
         const weatherData = await weatherRes.json();
         if (!weatherData.current || typeof weatherData.current.temperature_2m !== 'number') {
           weatherBar.classList.remove('visible');
