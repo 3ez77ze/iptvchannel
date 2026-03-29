@@ -9,5 +9,16 @@
     "language": "kor",
     "country": "kp",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "kctv1080Koryo01",
+    "name": "Korean Central Television (1080p)",
+    "iptv_urls": [
+      "/api/kctv-proxy"
+    ],
+    "youtube_urls": [],
+    "language": "kor",
+    "country": "kp",
+    "isGeoBlocked": false
   }
 ]
