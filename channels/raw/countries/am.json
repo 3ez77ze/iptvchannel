@@ -22,6 +22,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "e7VqP4mLd2sXnB",
+    "name": "ARTN",
+    "iptv_urls": [
+      "https://streamer1.connectto.com/ARTN_mobile/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "hye",
+    "country": "am",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "pKOdpT5WzCBSuI",
     "name": "First Channel News",
     "iptv_urls": [

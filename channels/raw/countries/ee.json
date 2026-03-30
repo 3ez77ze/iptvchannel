@@ -132,6 +132,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "J9k3Lm2Np8QxTa",
+    "name": "TBN Baltia",
+    "iptv_urls": [
+      "http://dc.tbnbaltia.eu:8088/dvr/rewind-21600.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "ee",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "r2gF8oZvggcaZG",
     "name": "Vantage Dance",
     "iptv_urls": [
