@@ -1570,5 +1570,49 @@
     "language": "eng",
     "country": "uk",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "iSQReUdiH3kmIG",
+    "name": "Channel 4",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/channel4/browser-HLS8/channel4.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "QMvjYTAEysglyZ",
+    "name": "Channel 5",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/channel5/browser-HLS8/channel5.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "OUENmvJfZE7o7X",
+    "name": "BBC Ceebies",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/bbc4cbeebies/browser-HLS8/bbc4cbeebies.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "enEjnWpfVl8GBK",
+    "name": "BBC CBBC",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/bbc3cbbc/browser-HLS8/bbc3cbbc.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "eng",
+    "country": "uk",
+    "isGeoBlocked": false
   }
 ]

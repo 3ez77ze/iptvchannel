@@ -782,10 +782,10 @@
   {
     "nanoid": "ncwhWe59svNFPX",
     "name": "franceinfo",
-    "iptv_urls": [],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/Z-Nwo-ypKtM"
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/franceinfo/browser-HLS8/franceinfo.m3u8"
     ],
+    "youtube_urls": [],
     "language": "fra",
     "country": "fr",
     "isGeoBlocked": false
@@ -1727,6 +1727,17 @@
     "name": "Zylo ScreamIN",
     "iptv_urls": [
       "https://rakutenaa-zylo-screamin-rakuten-p11ej.amagi.tv/playlist/rakutenAA-zylo-screamin-rakuten/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fra",
+    "country": "fr",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "naHvwe7QGyqove",
+    "name": "Gulli",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/gulli/browser-HLS8/gulli.m3u8"
     ],
     "youtube_urls": [],
     "language": "fra",
