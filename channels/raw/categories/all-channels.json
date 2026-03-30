@@ -62530,7 +62530,19 @@
     "iptv_urls": [],
     "youtube_urls": [],
     "embed_urls": [
-      "/bb-vip.html"
+      "https://s365z2.bbvipal.net/player1.php"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mT2vY7nK4pQxLd",
+    "name": "BB VIP 2",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://s365z2.bbvipal.net/player2.php"
     ],
     "language": "sqi",
     "country": "al",
