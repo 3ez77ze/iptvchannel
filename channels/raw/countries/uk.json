@@ -1532,7 +1532,9 @@
   {
     "nanoid": "gT6rJm5XqP2sNc",
     "name": "ITV 2",
-    "iptv_urls": [],
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/itv2/browser-HLS8/itv2.m3u8"
+    ],
     "youtube_urls": [],
     "embed_urls": [
       "https://viewembed.ru/channel/ITV2%5BUK%5D"
@@ -1544,7 +1546,9 @@
   {
     "nanoid": "uK3dLz8QaR1mVf",
     "name": "ITV 3",
-    "iptv_urls": [],
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/itv3/browser-HLS8/itv3.m3u8"
+    ],
     "youtube_urls": [],
     "embed_urls": [
       "https://viewembed.ru/channel/ITV3%5BUK%5D"
@@ -1556,7 +1560,9 @@
   {
     "nanoid": "pX4cNq7HtM9wSb",
     "name": "ITV 4",
-    "iptv_urls": [],
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/itv4/browser-HLS8/itv4.m3u8"
+    ],
     "youtube_urls": [],
     "embed_urls": [
       "https://viewembed.ru/channel/ITV4%5BUK%5D"
