@@ -1832,7 +1832,7 @@
     "nanoid": "tvbUhtaFYB4dE2",
     "name": "Vox HD",
     "iptv_urls": [
-      "https://s6.hopslan.com/voxz/tracks-v1a1/mono.m3u8"
+      "https://viamotionhsi.netplus.ch/live/eds/vox/browser-HLS8/vox.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1987,6 +1987,28 @@
     "name": "BVB Frauen",
     "iptv_urls": [
       "https://jmp2.uk/plu-66337ea1307fa300082c28a0.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "B1zt2hXm-p3_xD",
+    "name": "Deluxe Lounge (Germany)",
+    "iptv_urls": [
+      "https://jmp2.uk/stvp-CHAJ0500413A"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "U5YYZFlNUH6Ri1",
+    "name": "Sylt 1 (Germany)",
+    "iptv_urls": [
+      "https://h056.video-stream-hosting.de/easycast9-live/_definst_/mp4:livestream999/playlist.m3u8?&ref=sylt1.tv"
     ],
     "youtube_urls": [],
     "language": "deu",
