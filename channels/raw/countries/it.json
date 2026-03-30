@@ -1680,5 +1680,82 @@
     "language": "ita",
     "country": "it",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Ch6WRV8JBDZpDD",
+    "name": "Rai 2 HD",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/rai2/browser-HLS8/rai2.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Q3NvxcY1iXJV9N",
+    "name": "Rai Gulp",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/raigulp/browser-HLS8/raigulp.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yINCFWsHmMday6",
+    "name": "Rai News",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/rainews/browser-HLS8/rainews.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cVX2tXeXjXaeJZ",
+    "name": "Rai Scuola",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/raiscuola/browser-HLS8/raiscuola.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Fq3R0gsDuFiupI",
+    "name": "Rai Sport",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/raisport1/browser-HLS8/raisport1.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZudZmfxGhPdDJN",
+    "name": "Rai Storia",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/raistoria/browser-HLS8/raistoria.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "DhvJ8rwyHObhC1",
+    "name": "Italia 1",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/italia1/browser-HLS8/italia1.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "it",
+    "isGeoBlocked": false
   }
 ]
