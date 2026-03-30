@@ -363,5 +363,16 @@
     "language": "deu",
     "country": "at",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MShopAT7wLm3Rx",
+    "name": "Mediashop",
+    "iptv_urls": [
+      "https://stream01.welocal.stream/stream/fhd-meine-einkaufswelt_501/ngrp:stream_all/chunklist_b3628000.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
   }
 ]

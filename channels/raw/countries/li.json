@@ -1,0 +1,13 @@
+[
+  {
+    "nanoid": "MShopLI4pDx9Ju",
+    "name": "Mediashop",
+    "iptv_urls": [
+      "https://stream01.welocal.stream/stream/fhd-meine-einkaufswelt_501/ngrp:stream_all/chunklist_b3628000.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "li",
+    "isGeoBlocked": false
+  }
+]

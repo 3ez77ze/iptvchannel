@@ -741,7 +741,7 @@
     "country": "Liechtenstein",
     "capital": "Vaduz",
     "timeZone": "Europe/Vaduz",
-    "hasChannels": false
+    "hasChannels": true
   },
   "LK": {
     "country": "Sri Lanka",
