@@ -413,8 +413,7 @@
     "nanoid": "hkGnYbKbnHGzDM",
     "name": "KaufBei TV",
     "iptv_urls": [
-      "https://api.alpaca.t62a.com/hls/9103/index.m3u8",
-      "https://elephant.t62a.com/hls/8103/index.m3u8"
+      "https://elephant.t62a.com/hls/8103/stream0.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
