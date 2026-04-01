@@ -190,17 +190,6 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "d2QmV8Lxk4RjNp",
-    "name": "ALBTVChicago",
-    "iptv_urls": [
-      "https://t3.tvmak.com/tv/ALBTVCHICAGO.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "sqi",
-    "country": "al",
-    "isGeoBlocked": false
-  },
-  {
     "nanoid": "p7HsW3Kc9mTfQa",
     "name": "Ntv Durres",
     "iptv_urls": [
