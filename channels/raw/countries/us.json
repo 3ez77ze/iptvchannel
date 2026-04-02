@@ -8698,6 +8698,18 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "rtNewsUsCh01002",
+    "name": "RT News",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://odysee.com/$/embed/@RT:fd/livestream_RT:d"
+    ],
+    "language": "eng",
+    "country": "us",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "bWg4b30kQq0ARE",
     "name": "RTH-TV2 Gospel",
     "iptv_urls": [
