@@ -429,17 +429,6 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "lsCpzWr0KhAo1G",
-    "name": "Al-Sahat TV",
-    "iptv_urls": [
-      "https://assahat.b-cdn.net/Assahat/assahatobs/index.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "ara",
-    "country": "ye",
-    "isGeoBlocked": false
-  },
-  {
     "nanoid": "0X5lB22f2RPA0r",
     "name": "Alcance TV",
     "iptv_urls": [
