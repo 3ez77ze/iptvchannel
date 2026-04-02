@@ -20,5 +20,16 @@
     "language": "fao",
     "country": "fo",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "KVF2Utland01aB",
+    "name": "KVF2",
+    "iptv_urls": [
+      "https://w-live-edge1.kringvarp.fo/kvf-2_utland/_definst_/smil:kvf-2_utland.smil/chunklist_w1218916058_b1204000_slfao.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fao",
+    "country": "fo",
+    "isGeoBlocked": false
   }
 ]
