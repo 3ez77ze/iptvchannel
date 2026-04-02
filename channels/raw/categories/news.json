@@ -2343,7 +2343,7 @@
     "nanoid": "1sgSucEcZPpZQV",
     "name": "CBS News 24/7",
     "iptv_urls": [
-      "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ef9ac791-1c9e-4d37-9ff3-1475aa9d6169:GRQ/master.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2354,7 +2354,7 @@
     "nanoid": "Lw0YOImd9fn4Hg",
     "name": "CBS News Baltimore",
     "iptv_urls": [
-      "https://lineup.cbsivideo.com/playout/8877a7d5-b094-4ac8-bc72-75a5fed68e5b/index.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/TMUt418sQMeu1QtneYJ9ag/stream/9a2a95ce-396d-4e98-b81c-3fa9f2c2fc45:BRU/master.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2365,7 +2365,7 @@
     "nanoid": "ZOnYGxx6PUPbjB",
     "name": "CBS News Bay Area",
     "iptv_urls": [
-      "https://cbsn-sf.cbsnstream.cbsnews.com/out/v1/dac63c1abb3f4a2dac9f508f44bb072a/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/laLJwH1nS2KQAUQTF8z1Cg/stream/1e12c731-989a-4d46-bf8c-1733e6b7612a:GRQ/variant/e3bb1da14e2f4b07f73e017b4d1754f4/bandwidth/2121127.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2376,8 +2376,7 @@
     "nanoid": "biaut196fpMwFo",
     "name": "CBS News Boston",
     "iptv_urls": [
-      "https://cbsn-bos.cbsnstream.cbsnews.com/out/v1/589d66ec6eb8434c96c28de0370d1326/master.m3u8",
-      "https://dai.google.com/linear/hls/event/dHA193vxQ_WqZNVoC-W5MA/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/dHA193vxQ_WqZNVoC-W5MA/stream/ae413dab-e1f2-44ff-bd8d-c8b75d9e3ac9:GRQ/variant/af98370519ea4f13420d70598ab72632/bandwidth/2121158.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2388,7 +2387,7 @@
     "nanoid": "qpky1lReZ5h3vG",
     "name": "CBS News Chicago",
     "iptv_urls": [
-      "https://cbsn-chi.cbsnstream.cbsnews.com/out/v1/b2fc0d5715d54908adf07f97d2616646/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/_xQBtL7ZSEClkNebaXzn8w/stream/02e1f3de-3dab-4017-95f5-c5f9adf6ca3c:BRU/variant/89482eec38cbebea5d44d9d4d9caa0eb/bandwidth/2121266.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2399,7 +2398,7 @@
     "nanoid": "IAJCZ634KCJ9kS",
     "name": "CBS News Colorado",
     "iptv_urls": [
-      "https://cbsn-den.cbsnstream.cbsnews.com/out/v1/2e49baf2906244ecb01b07d9885fbe7a/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/E9CkyheTSKeGiOiICU_JBQ/stream/8dd6bd8f-5845-4126-9f5f-3fcf80d012a6:BRU/variant/c56c78b82e1f2831c85d93a784d1b889/bandwidth/2249000.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2410,7 +2409,7 @@
     "nanoid": "Fr9DclEhSgBo8d",
     "name": "CBS News Detroit",
     "iptv_urls": [
-      "https://cbsn-det.cbsnstream.cbsnews.com/out/v1/169f5c001bc74fa7a179b19c20fea069/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/xnyAMOsfSV2J1b-A3nROFQ/stream/fb8dd94c-d7b3-4d24-88c4-0ee8453dd14d:GRQ/variant/c5180c98c0e9955c167d58f0487110d1/bandwidth/1461222.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2421,7 +2420,7 @@
     "nanoid": "pWdx8BZTFfbTjG",
     "name": "CBS News Los Angeles",
     "iptv_urls": [
-      "https://cbsn-la.cbsnstream.cbsnews.com/out/v1/57b6c4534a164accb6b1872b501e0028/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/K_2aA7OVRTacJJli1oSi8w/stream/9294084c-785d-4139-9c7e-1c6c9679bb61:GRQ/variant/344ab3b460bc514714f94805d600b130/bandwidth/2121204.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2432,8 +2431,7 @@
     "nanoid": "hb7SJ3ytmG6xYN",
     "name": "CBS News Miami",
     "iptv_urls": [
-      "https://cbsn-mia.cbsnstream.cbsnews.com/out/v1/ac174b7938264d24ae27e56f6584bca0/master.m3u8",
-      "https://lineup.cbsivideo.com/playout/8796731e-7ce7-4bcf-bb04-41ef5a969c62/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/_yODrBHESGSzPe3dqW4gGg/stream/a670fce4-1947-4e81-9253-2af7cebf1bd2:GRQ/variant/c0f19d2b853080a53847595c1a3495f4/bandwidth/1656551.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2444,7 +2442,7 @@
     "nanoid": "gsVWd86pwZl1QB",
     "name": "CBS News Minnesota",
     "iptv_urls": [
-      "https://cbsn-min.cbsnstream.cbsnews.com/out/v1/76518f06941246ba810c8d175600bf74/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/c0XucO32RNKG8oeQ351a4Q/stream/e6a1790b-9ee7-4818-b1b0-227a55e5e18e:BRU/variant/2736d5986da677d68cf35bae6787d917/bandwidth/1021209.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2455,7 +2453,7 @@
     "nanoid": "PNZz8fxpZfs4ym",
     "name": "CBS News New York",
     "iptv_urls": [
-      "https://cbsn-ny.cbsnstream.cbsnews.com/out/v1/ec3897d58a9b45129a77d67aa247d136/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/jeTDC610T-OSPdiWhcl0Pg/stream/fba91619-30dd-4d4c-828a-c1cf9eb6d87e:BRU/variant/8abba06fc58700dc51d38101ab44d8fd/bandwidth/2121077.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2466,7 +2464,7 @@
     "nanoid": "9qa9bO5MqVeJwY",
     "name": "CBS News Philadelphia",
     "iptv_urls": [
-      "https://cbsn-phi.cbsnstream.cbsnews.com/out/v1/5c9ad3e215984b0e9ad845b335216b72/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/R2Kw0uvnQIW7fUmOseurzA/stream/49e1de69-c36f-4422-b3a6-9db349d7ba5b:BRU/variant/574f4be7d9e3d5780c305278cdb8b01c/bandwidth/2121252.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2477,7 +2475,7 @@
     "nanoid": "CXalbY14wJ5zHd",
     "name": "CBS News Pittsburgh",
     "iptv_urls": [
-      "https://cbsn-pit.cbsnstream.cbsnews.com/out/v1/6966dabf8150405ab26f854e3cd6a2b8/master.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/mir-uZYjTu6-8JLMHBTKhQ/stream/02eb54b9-0ee7-4115-a442-aeb62abeb380:BRU/variant/f7b99a48fe82e14800e0a11ff3b171d6/bandwidth/2121127.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
@@ -2488,7 +2486,7 @@
     "nanoid": "gMvhUHM2PFj32S",
     "name": "CBS News Sacramento",
     "iptv_urls": [
-      "https://lineup.cbsivideo.com/playout/c1ed69db-6b71-4581-a937-a70ab4089f8a/index.m3u8"
+      "https://dai.google.com/linear/hls/pa/event/e7mp4YVGS7O_e7rqRNjKow/stream/e6e5063d-463b-48dd-8230-5789c8c92a3a:BRU/variant/bc9ada32ea768decd52ec13d88d79653/bandwidth/2149408.m3u8"
     ],
     "youtube_urls": [],
     "language": "eng",
