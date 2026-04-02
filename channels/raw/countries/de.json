@@ -2024,5 +2024,60 @@
     "language": "deu",
     "country": "de",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NTOONde7Qm4KsP",
+    "name": "Nickelodeon Toons (720p)",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-5ede448d3d50590007a4419e.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NTEENde9Vr2LuX",
+    "name": "Nickelodeon Teen (720p)",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-5f0d668b872e4400073acc68.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "NCLASde3Tw8YkM",
+    "name": "Nickelodeon Classics (720p)",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-67f3eb800a1beb98767ca748.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "AHCde6Bx1Qn9Fp",
+    "name": "Alle hassen Chris",
+    "iptv_urls": [
+      "https://jmp2.uk/plu-622f6e1e2792150007e0b2ff.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MDRSAde5Hk7VtR",
+    "name": "MDR Sachsen",
+    "iptv_urls": [
+      "https://mdr-live.ard-mcdn.de/mdr/sa/hls/de/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
   }
 ]
