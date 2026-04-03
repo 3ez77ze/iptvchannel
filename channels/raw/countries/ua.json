@@ -309,5 +309,29 @@
     "language": "ukr",
     "country": "ua",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "wP2rK8mTq5Nx1Hv",
+    "name": "Lugansk 24",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/lugansk-24.html"
+    ],
+    "language": "rus",
+    "country": "ua",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "nL6vD3sJf9Qx4Bt",
+    "name": "1-respublikanskiy",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/1-respublikanskiy.html"
+    ],
+    "language": "rus",
+    "country": "ua",
+    "isGeoBlocked": false
   }
 ]

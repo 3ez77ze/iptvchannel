@@ -1663,5 +1663,65 @@
     "language": "rus",
     "country": "ru",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "jK9pT2wQe6Ry1Uz",
+    "name": "CGTN Russia",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/cgtn-russkiy.html"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sF4hV8mLq2Xn7Pd",
+    "name": "Planeta RTR",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/online/planeta-rtr.html"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "bG3kN6rTz1Wp8Cy",
+    "name": "Lugansk 24",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/lugansk-24.html"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "qH7dM4vJx9Ls2Af",
+    "name": "1-respublikanskiy",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/1-respublikanskiy.html"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "uY5nC1pRk8Vt3Dz",
+    "name": "1st Channel",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://ok.ru/videoembed/1115050286838"
+    ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
   }
 ]
