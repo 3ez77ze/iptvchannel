@@ -97,5 +97,17 @@
     "language": "rus",
     "country": "kz",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "xQ2mL7vHn9P4rTd",
+    "name": "KTK",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/ktk.html"
+    ],
+    "language": "rus",
+    "country": "kz",
+    "isGeoBlocked": false
   }
 ]

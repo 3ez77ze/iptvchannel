@@ -54,5 +54,41 @@
     "language": "rus",
     "country": "by",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "pV8sJ3nKq4Lm7Wx",
+    "name": "Belarus 1",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/belarus-1.html"
+    ],
+    "language": "rus",
+    "country": "by",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dR6tY1uKf8Np3Qa",
+    "name": "Belarus 2",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/belarus-2.html"
+    ],
+    "language": "rus",
+    "country": "by",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "mN5cZ2xVb7Hg4Lp",
+    "name": "Belarus 3",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://smotret.tv/iframes/belarus-3.html"
+    ],
+    "language": "rus",
+    "country": "by",
+    "isGeoBlocked": false
   }
 ]
