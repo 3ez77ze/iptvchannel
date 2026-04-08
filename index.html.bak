@@ -455,30 +455,6 @@
       z-index: 100;
     }
 
-    .top-left-controls {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      display: flex;
-      gap: 8px;
-      z-index: 100;
-    }
-
-    .btn-radio {
-      background: var(--glass);
-      color: var(--text-primary);
-      text-decoration: none;
-    }
-    .btn-radio:hover {
-      background: var(--accent);
-      box-shadow: 0 0 20px var(--accent-glow);
-    }
-    .btn-radio svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
-    }
-
     .icon-btn {
       width: 40px;
       height: 40px;
@@ -686,43 +662,30 @@
 
     .weather-bar {
       display: none;
-      flex-direction: column;
-      gap: 8px;
-      padding: 12px 16px;
-      background: var(--bg-surface);
-      border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
-      min-height: 72px;
-    }
-    .weather-bar.visible { display: flex; }
-    .weather-primary {
-      display: flex;
       align-items: center;
       gap: 10px;
-      min-height: 30px;
+      padding: 8px 16px;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      min-height: 38px;
     }
-    .weather-icon { font-size: 1.35rem; flex-shrink: 0; }
+    .weather-bar.visible { display: flex; }
+    .weather-icon { font-size: 1.1rem; flex-shrink: 0; }
     .weather-temp {
       font-weight: 700;
       color: var(--text-primary);
       font-variant-numeric: tabular-nums;
-      font-size: 0.92rem;
     }
     .weather-condition {
       color: var(--text-muted);
-      font-size: 0.84rem;
+      font-size: 0.78rem;
       flex: 1;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-    }
-    .weather-details {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 4px 12px;
-      font-size: 0.76rem;
-      color: var(--text-muted);
-      line-height: 1.35;
     }
     .weather-loading {
       color: var(--text-muted);
@@ -1032,119 +995,10 @@
       to { transform: rotate(360deg); }
     }
 
-    /* ---- Audio Visualizer ---- */
-    .audio-visualizer {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at center, #1a1a2e 0%, #09090f 100%);
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 5;
-      overflow: hidden;
-    }
-
-    .audio-circle {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), #e81cff);
-      box-shadow: 0 0 40px rgba(99,102,241,0.5), inset 0 0 20px rgba(255,255,255,0.2);
-      animation: pulse-circle 2s infinite ease-in-out;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .audio-circle svg {
-      width: 48px;
-      height: 48px;
-      fill: #fff;
-      z-index: 3;
-    }
-
-    @keyframes pulse-circle {
-      0% { transform: translate(-50%, -50%) scale(0.95); box-shadow: 0 0 40px rgba(99,102,241,0.4); }
-      50% { transform: translate(-50%, -50%) scale(1.05); box-shadow: 0 0 80px rgba(232,28,255,0.6); }
-      100% { transform: translate(-50%, -50%) scale(0.95); box-shadow: 0 0 40px rgba(99,102,241,0.4); }
-    }
-
-    .audio-bars {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 120px;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 8px;
-      z-index: 1;
-      padding: 0 40px 60px;
-    }
-
-    .audio-bar {
-      width: 12px;
-      background: linear-gradient(to top, var(--accent), #e81cff);
-      border-radius: 6px 6px 0 0;
-      animation: bounce-bar 1.5s infinite ease-in-out alternate;
-      box-shadow: 0 0 10px rgba(232,28,255,0.4);
-      transform-origin: bottom;
-    }
-
-    .audio-bar:nth-child(1) { height: 30%; animation-delay: 0.1s; }
-    .audio-bar:nth-child(2) { height: 60%; animation-delay: 0.3s; }
-    .audio-bar:nth-child(3) { height: 90%; animation-delay: 0.0s; }
-    .audio-bar:nth-child(4) { height: 50%; animation-delay: 0.4s; }
-    .audio-bar:nth-child(5) { height: 80%; animation-delay: 0.2s; }
-    .audio-bar:nth-child(6) { height: 40%; animation-delay: 0.5s; }
-    .audio-bar:nth-child(7) { height: 70%; animation-delay: 0.1s; }
-
-    @keyframes bounce-bar {
-      0% { transform: scaleY(0.4); }
-      100% { transform: scaleY(1); }
-    }
-
-    .audio-waves {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-      transform: translate(-50%, -50%);
-      z-index: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .audio-wave {
-      position: absolute;
-      border: 2px solid rgba(232,28,255,0.3);
-      border-radius: 50%;
-      animation: ripple-wave 3s infinite linear;
-    }
-
-    .audio-wave:nth-child(1) { width: 140px; height: 140px; animation-delay: 0s; }
-    .audio-wave:nth-child(2) { width: 140px; height: 140px; animation-delay: 1s; }
-    .audio-wave:nth-child(3) { width: 140px; height: 140px; animation-delay: 2s; }
-
-    @keyframes ripple-wave {
-      0% { width: 140px; height: 140px; opacity: 1; }
-      100% { width: 600px; height: 600px; opacity: 0; }
-    }
-
     /* ---- Responsive ---- */
     @media (max-width: 768px) {
       body { flex-direction: column; }
       .sidebar { width: 100%; height: 45vh; border-left: none; border-top: 1px solid var(--border-subtle); }
-      .weather-details { grid-template-columns: 1fr; }
       .video-wrapper { padding: 12px; }
       .custom-player { border-radius: var(--radius-md); }
       iframe { border-radius: var(--radius-md); }
@@ -1157,14 +1011,6 @@
 </head>
 <body>
   <div class="player-area">
-    <div class="top-left-controls">
-      <a href="/radio" class="icon-btn btn-radio" title="Radio">
-        <svg viewBox="0 0 24 24"><path d="M20 6H8.3L20.1 3.4L19.6 1.5L1.5 6H1C0.4 6 0 6.4 0 7V21C0 21.6 0.4 22 1 22H23C23.6 22 24 21.6 24 21V10C24 7.8 22.2 6 20 6ZM22 20H2V8H20C21.1 8 22 8.9 22 10V20ZM13 12.5C13 14.4 11.4 16 9.5 16S6 14.4 6 12.5S7.6 9 9.5 9S13 10.6 13 12.5ZM9.5 11C8.7 11 8 11.7 8 12.5S8.7 14 9.5 14S11 13.3 11 12.5S10.3 11 9.5 11ZM20 12H16V10H20V12Z"/></svg>
-      </a>
-      <a href="/sports" class="icon-btn btn-radio" title="Sports">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.92 6h-3.1c-.23-.95-.57-1.85-1-2.67A8.04 8.04 0 0 1 18.92 8zM12 4c.83 1.2 1.44 2.57 1.8 4h-3.6c.36-1.43.97-2.8 1.8-4zM4.26 14A8.1 8.1 0 0 1 4 12c0-.69.09-1.36.26-2h3.43c-.06.66-.1 1.32-.1 2s.04 1.34.1 2H4.26zm.82 2h3.1c.23.95.57 1.85 1 2.67A8.04 8.04 0 0 1 5.08 16zM8.18 8h-3.1a8.04 8.04 0 0 1 4.1-2.67c-.43.82-.77 1.72-1 2.67zM12 20c-.83-1.2-1.44-2.57-1.8-4h3.6c-.36 1.43-.97 2.8-1.8 4zm2.24-6H9.76c-.07-.66-.11-1.32-.11-2s.04-1.34.11-2h4.48c.07.66.11 1.32.11 2s-.04 1.34-.11 2zm.58 4.67c.43-.82.77-1.72 1-2.67h3.1a8.04 8.04 0 0 1-4.1 2.67zM16.31 14c.06-.66.1-1.32.1-2s-.04-1.34-.1-2h3.43c.17.64.26 1.31.26 2s-.09 1.36-.26 2h-3.43z"/></svg>
-      </a>
-    </div>
     <div class="top-controls">
       <div class="icon-btn btn-star" onclick="toggleFavorite()" title="Favorite channel">☆</div>
       <div class="icon-btn btn-close" onclick="stopPlayback()" title="Stop playback">✕</div>
@@ -1172,28 +1018,6 @@
     <div class="video-wrapper">
       <div class="custom-player" id="customPlayer">
         <video id="videoPlayer" autoplay playsinline></video>
-        <audio id="audioPlayer" autoplay playsinline style="display:none;"></audio>
-        <div class="audio-visualizer" id="audioVisualizer">
-          <div class="audio-waves">
-            <div class="audio-wave"></div>
-            <div class="audio-wave"></div>
-            <div class="audio-wave"></div>
-          </div>
-          <div class="audio-circle">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-            </svg>
-          </div>
-          <div class="audio-bars">
-            <div class="audio-bar"></div>
-            <div class="audio-bar"></div>
-            <div class="audio-bar"></div>
-            <div class="audio-bar"></div>
-            <div class="audio-bar"></div>
-            <div class="audio-bar"></div>
-            <div class="audio-bar"></div>
-          </div>
-        </div>
         <div class="player-gradient"></div>
         <div class="player-loading-overlay"><div class="player-spinner"></div></div>
         <div class="player-controls" id="playerControls">
@@ -1270,16 +1094,13 @@
         <div id="displayCountry" class="country-name">Select Country</div>
         <div id="displayCapital" class="capital-name">-</div>
       </div>
-      <div id="displayTime" class="local-time">--:--:-- --</div>
+      <div id="displayTime" class="local-time">--:-- --</div>
     </div>
 
     <div class="weather-bar" id="weatherBar">
-      <div class="weather-primary">
-        <span class="weather-icon" id="weatherIcon"></span>
-        <span class="weather-temp" id="weatherTemp"></span>
-        <span class="weather-condition" id="weatherCondition"></span>
-      </div>
-      <div class="weather-details" id="weatherDetails"></div>
+      <span class="weather-icon" id="weatherIcon"></span>
+      <span class="weather-temp" id="weatherTemp"></span>
+      <span class="weather-condition" id="weatherCondition"></span>
     </div>
 
     <div class="search-container">
@@ -1314,29 +1135,16 @@
 
   <script>
     const video = document.getElementById('videoPlayer');
-    const audio = document.getElementById('audioPlayer');
-    const audioVisualizer = document.getElementById('audioVisualizer');
     const iframe = document.getElementById('ytPlayer');
     const placeholder = document.getElementById('placeholder');
     const hls = new Hls();
 
-    let activeMedia = video;
     let allCountries = {};
     let allChannels = [];
     let currentCountryCode = '';
     let currentChannel = null;
     let timeInterval = null;
     let favorites = JSON.parse(localStorage.getItem('cookiestv_favs') || '[]');
-
-    const fmRadioChannels = [
-      { nanoid: 'fm-1', name: 'Top Albania Radio', iptv_urls: ['https://live.top-media.al/tar'], country: 'FM', isAudio: true },
-      { nanoid: 'fm-2', name: 'Top Gold Radio (Albania)', iptv_urls: ['https://live.topgold.al/topgold'], country: 'FM', isAudio: true },
-      { nanoid: 'fm-3', name: 'Pyongyang FM (North Korea)', iptv_urls: ['https://listen7.myradio24.com/69366'], country: 'FM', isAudio: true },
-      { nanoid: 'fm-4', name: 'hr1 (Germany)', iptv_urls: ['https://hlshr1.akamaized.net/hls/live/2016533/hr1rheinmain/192/seglist.m3u8'], country: 'FM', isAudio: true },
-      { nanoid: 'fm-5', name: 'hr3 (Germany)', iptv_urls: ['https://hlshr3.akamaized.net/hls/live/2016536/hr3rheinmain/192/seglist.m3u8'], country: 'FM', isAudio: true },
-      { nanoid: 'fm-6', name: 'hr4 (Germany)', iptv_urls: ['https://hlshr4.akamaized.net/hls/live/2016537/hr4rheinmain/192/seglist.m3u8'], country: 'FM', isAudio: true },
-      { nanoid: 'fm-7', name: 'Radio Zwickau (Germany)', iptv_urls: ['https://edge85.radio.radiozwickau.de/radiozwickau-live/stream/aacp'], country: 'FM', isAudio: true }
-    ];
 
     const nowPlaying = document.getElementById('nowPlaying');
     const nowPlayingName = document.getElementById('nowPlayingName');
@@ -1438,54 +1246,12 @@
 
     // Convert country code to flag emoji string
     function countryCodeToFlag(code) {
-      if (code === 'FM') return '📻';
       if (!code || code.length !== 2) return '';
       // "UK" is not a standard ISO 3166-1 code; use "GB" for the Union Jack flag
       const mapped = code.toUpperCase() === 'UK' ? 'GB' : code.toUpperCase();
       return String.fromCodePoint(
         ...[...mapped].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)
       );
-    }
-
-    function normalizeCountryCode(code) {
-      if (!code) return '';
-      const normalized = code.toUpperCase();
-      return normalized === 'UK' ? 'GB' : normalized;
-    }
-
-    function isValidTimeZone(tz) {
-      if (!tz) return false;
-      try {
-        new Intl.DateTimeFormat('en-US', { timeZone: tz }).format(new Date());
-        return true;
-      } catch (_) {
-        return false;
-      }
-    }
-
-    function formatLocalTime(tz) {
-      const safeTimeZone = isValidTimeZone(tz) ? tz : 'UTC';
-      const parts = new Intl.DateTimeFormat('en-US', {
-        hour: 'numeric',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: true,
-        timeZone: safeTimeZone
-      }).formatToParts(new Date());
-
-      let hour = '';
-      let minute = '';
-      let second = '';
-      let dayPeriod = '';
-
-      parts.forEach(part => {
-        if (part.type === 'hour') hour = part.value;
-        if (part.type === 'minute') minute = part.value;
-        if (part.type === 'second') second = part.value;
-        if (part.type === 'dayPeriod') dayPeriod = part.value.toLowerCase();
-      });
-
-      return `${hour}:${minute}:${second} ${dayPeriod}`;
     }
 
     // Parse Twemoji for an element, with custom flag overrides
@@ -1509,7 +1275,6 @@
     async function init() {
       const res = await fetch('/api/countries');
       allCountries = await res.json();
-      allCountries['FM'] = { country: 'FM Radio', hasChannels: true, code: 'FM' };
       const select = document.getElementById('countrySelect');
 
       Object.entries(allCountries)
@@ -1591,29 +1356,22 @@
 
       updateTime(countryData.timeZone);
       if (timeInterval) clearInterval(timeInterval);
-      timeInterval = setInterval(() => updateTime(countryData.timeZone), 1000);
+      timeInterval = setInterval(() => updateTime(countryData.timeZone), 60000);
 
       if (countryData.capital) {
-        fetchWeather(countryData.capital, code, countryData.timeZone);
+        fetchWeather(countryData.capital, code);
       }
 
       document.getElementById('channelList').innerHTML = '<div class="loading-skeleton"><div class="loading-spinner"></div> Loading channels...</div>';
-      
-      if (code === 'FM') {
-        allChannels = fmRadioChannels;
-        filterChannels(document.getElementById('searchInput').value);
-        return;
-      }
-
       const res = await fetch(`/api/channels/country/${code.toLowerCase()}`);
       allChannels = await res.json();
       filterChannels(document.getElementById('searchInput').value);
     }
 
     function updateTime(tz) {
-      const displayTimeEl = document.getElementById('displayTime');
-      displayTimeEl.textContent = formatLocalTime(tz);
-      displayTimeEl.title = isValidTimeZone(tz) ? tz : 'UTC';
+      if (!tz) return;
+      const options = { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: tz };
+      document.getElementById('displayTime').textContent = new Intl.DateTimeFormat('en-US', options).format(new Date());
     }
 
     function filterChannels(q) {
@@ -1684,14 +1442,14 @@
       customPlayer.classList.add('show-controls');
       clearTimeout(controlsTimeout);
       controlsTimeout = setTimeout(() => {
-        if (!activeMedia.paused) customPlayer.classList.remove('show-controls');
+        if (!video.paused) customPlayer.classList.remove('show-controls');
       }, 3000);
     }
 
     customPlayer.addEventListener('mousemove', showPlayerControls);
     customPlayer.addEventListener('mouseleave', () => {
       clearTimeout(controlsTimeout);
-      if (!activeMedia.paused) customPlayer.classList.remove('show-controls');
+      if (!video.paused) customPlayer.classList.remove('show-controls');
     });
 
     // Click to play/pause
@@ -1707,15 +1465,15 @@
     });
 
     function togglePlayPause() {
-      if (activeMedia.paused) {
-        activeMedia.play();
+      if (video.paused) {
+        video.play();
       } else {
-        activeMedia.pause();
+        video.pause();
       }
     }
 
     function updatePlayPauseIcon() {
-      if (activeMedia.paused) {
+      if (video.paused) {
         playIcon.style.display = '';
         pauseIcon.style.display = 'none';
       } else {
@@ -1724,63 +1482,24 @@
       }
     }
 
-    function attachMediaEvents(media) {
-      media.addEventListener('play', () => { updatePlayPauseIcon(); showPlayerControls(); });
-      media.addEventListener('pause', () => { updatePlayPauseIcon(); customPlayer.classList.add('show-controls'); });
-      media.addEventListener('waiting', () => customPlayer.classList.add('is-loading'));
-      media.addEventListener('canplay', () => customPlayer.classList.remove('is-loading'));
-      media.addEventListener('playing', () => customPlayer.classList.remove('is-loading'));
-
-      media.addEventListener('timeupdate', () => {
-        if (isLiveStream || !media.duration || !isFinite(media.duration)) return;
-        const pct = (media.currentTime / media.duration) * 100;
-        progressPlayed.style.width = pct + '%';
-        progressHandle.style.left = pct + '%';
-      });
-
-      media.addEventListener('progress', () => {
-        if (isLiveStream || !media.duration || !isFinite(media.duration)) return;
-        if (media.buffered.length > 0) {
-          const buffEnd = media.buffered.end(media.buffered.length - 1);
-          progressBuffered.style.width = (buffEnd / media.duration) * 100 + '%';
-        }
-      });
-
-      media.addEventListener('loadedmetadata', () => {
-        if (media.duration && isFinite(media.duration) && media.duration < 86400) {
-          isLiveStream = false;
-          playerTime.innerHTML = formatTime(0) + ' / ' + formatTime(media.duration);
-        } else {
-          isLiveStream = true;
-          playerTime.innerHTML = '<span class="player-live-badge">LIVE</span>';
-        }
-      });
-
-      media.addEventListener('timeupdate', () => {
-        if (!isLiveStream && media.duration && isFinite(media.duration)) {
-          playerTime.textContent = formatTime(media.currentTime) + ' / ' + formatTime(media.duration);
-        }
-      });
-    }
-
-    attachMediaEvents(video);
-    attachMediaEvents(audio);
+    video.addEventListener('play', () => { updatePlayPauseIcon(); showPlayerControls(); });
+    video.addEventListener('pause', () => { updatePlayPauseIcon(); customPlayer.classList.add('show-controls'); });
+    video.addEventListener('waiting', () => customPlayer.classList.add('is-loading'));
+    video.addEventListener('canplay', () => customPlayer.classList.remove('is-loading'));
+    video.addEventListener('playing', () => customPlayer.classList.remove('is-loading'));
 
     playPauseBtn.addEventListener('click', (e) => { e.stopPropagation(); togglePlayPause(); });
 
     // Volume
     volumeBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      if (activeMedia.muted || activeMedia.volume === 0) {
+      if (video.muted || video.volume === 0) {
         video.muted = false;
-        audio.muted = false;
         video.volume = savedVolume || 1;
-        audio.volume = savedVolume || 1;
-        volumeSlider.value = activeMedia.volume;
+        volumeSlider.value = video.volume;
       } else {
-        savedVolume = activeMedia.volume;
+        savedVolume = video.volume;
         video.muted = true;
-        audio.muted = true;
       }
       updateVolumeIcon();
       updateVolumeSliderFill();
@@ -1788,18 +1507,15 @@
 
     volumeSlider.addEventListener('input', (e) => {
       e.stopPropagation();
-      const val = parseFloat(volumeSlider.value);
-      video.volume = val;
-      audio.volume = val;
-      video.muted = val === 0;
-      audio.muted = val === 0;
-      savedVolume = val || savedVolume;
+      video.volume = parseFloat(volumeSlider.value);
+      video.muted = video.volume === 0;
+      savedVolume = video.volume || savedVolume;
       updateVolumeIcon();
       updateVolumeSliderFill();
     });
 
     function updateVolumeIcon() {
-      if (activeMedia.muted || activeMedia.volume === 0) {
+      if (video.muted || video.volume === 0) {
         volHighIcon.style.display = 'none';
         volMuteIcon.style.display = '';
       } else {
@@ -1809,25 +1525,63 @@
     }
 
     function updateVolumeSliderFill() {
-      const val = activeMedia.muted ? 0 : parseFloat(volumeSlider.value);
+      const val = video.muted ? 0 : parseFloat(volumeSlider.value);
       const pct = val * 100;
       volumeSlider.style.setProperty('--vol-pct', pct + '%');
     }
 
     // Progress bar
+    video.addEventListener('timeupdate', () => {
+      if (isLiveStream || !video.duration || !isFinite(video.duration)) return;
+      const pct = (video.currentTime / video.duration) * 100;
+      progressPlayed.style.width = pct + '%';
+      progressHandle.style.left = pct + '%';
+    });
+
+    video.addEventListener('progress', () => {
+      if (isLiveStream || !video.duration || !isFinite(video.duration)) return;
+      if (video.buffered.length > 0) {
+        const buffEnd = video.buffered.end(video.buffered.length - 1);
+        progressBuffered.style.width = (buffEnd / video.duration) * 100 + '%';
+      }
+    });
+
+    function formatTime(sec) {
+      if (!isFinite(sec)) return '0:00';
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    video.addEventListener('loadedmetadata', () => {
+      if (video.duration && isFinite(video.duration) && video.duration < 86400) {
+        isLiveStream = false;
+        playerTime.innerHTML = formatTime(0) + ' / ' + formatTime(video.duration);
+      } else {
+        isLiveStream = true;
+        playerTime.innerHTML = '<span class="player-live-badge">LIVE</span>';
+      }
+    });
+
+    video.addEventListener('timeupdate', () => {
+      if (!isLiveStream && video.duration && isFinite(video.duration)) {
+        playerTime.textContent = formatTime(video.currentTime) + ' / ' + formatTime(video.duration);
+      }
+    });
+
     progressContainer.addEventListener('click', (e) => {
       if (isLiveStream) return;
       e.stopPropagation();
       const rect = progressContainer.getBoundingClientRect();
       const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-      activeMedia.currentTime = pct * activeMedia.duration;
+      video.currentTime = pct * video.duration;
     });
 
     progressContainer.addEventListener('mousemove', (e) => {
-      if (isLiveStream || !activeMedia.duration) return;
+      if (isLiveStream || !video.duration) return;
       const rect = progressContainer.getBoundingClientRect();
       const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-      progressTooltip.textContent = formatTime(pct * activeMedia.duration);
+      progressTooltip.textContent = formatTime(pct * video.duration);
       progressTooltip.style.left = (pct * 100) + '%';
     });
 
@@ -1933,7 +1687,7 @@
       if (document.pictureInPictureElement) {
         await document.exitPictureInPicture();
       } else {
-        await activeMedia.requestPictureInPicture();
+        await video.requestPictureInPicture();
       }
     });
 
@@ -1983,11 +1737,7 @@
         case 'm':
           e.preventDefault();
           video.muted = !video.muted;
-          audio.muted = video.muted;
-          if (!video.muted && video.volume === 0) {
-             video.volume = savedVolume || 0.5;
-             audio.volume = video.volume;
-          }
+          if (!video.muted && video.volume === 0) video.volume = savedVolume || 0.5;
           volumeSlider.value = video.muted ? 0 : video.volume;
           updateVolumeIcon();
           updateVolumeSliderFill();
@@ -1996,9 +1746,7 @@
         case 'arrowup':
           e.preventDefault();
           video.volume = Math.min(1, video.volume + 0.1);
-          audio.volume = video.volume;
           video.muted = false;
-          audio.muted = false;
           volumeSlider.value = video.volume;
           updateVolumeIcon();
           updateVolumeSliderFill();
@@ -2007,23 +1755,22 @@
         case 'arrowdown':
           e.preventDefault();
           video.volume = Math.max(0, video.volume - 0.1);
-          audio.volume = video.volume;
           volumeSlider.value = video.volume;
           updateVolumeIcon();
           updateVolumeSliderFill();
           showPlayerControls();
           break;
         case 'arrowleft':
-          if (!isLiveStream && activeMedia.duration) {
+          if (!isLiveStream && video.duration) {
             e.preventDefault();
-            activeMedia.currentTime = Math.max(0, activeMedia.currentTime - 10);
+            video.currentTime = Math.max(0, video.currentTime - 10);
             showPlayerControls();
           }
           break;
         case 'arrowright':
-          if (!isLiveStream && activeMedia.duration) {
+          if (!isLiveStream && video.duration) {
             e.preventDefault();
-            activeMedia.currentTime = Math.min(activeMedia.duration, activeMedia.currentTime + 10);
+            video.currentTime = Math.min(video.duration, video.currentTime + 10);
             showPlayerControls();
           }
           break;
@@ -2037,63 +1784,14 @@
             if (document.pictureInPictureElement) {
               document.exitPictureInPicture();
             } else {
-              activeMedia.requestPictureInPicture();
+              video.requestPictureInPicture();
             }
           }
           break;
       }
     });
 
-    function extractLikelyStreamUrl(rawValue) {
-      if (typeof rawValue !== 'string') return '';
-      const trimmed = rawValue.trim();
-      if (!trimmed) return '';
-      if (/^https?:\/\//i.test(trimmed)) return trimmed;
-      if (trimmed.startsWith('/')) return trimmed;
-
-      const normalized = trimmed.replace(/\\\//g, '/');
-      const matches = normalized.match(/https?:\/\/[^\s"'<>\\)]+/gi);
-      if (!matches || matches.length === 0) return '';
-
-      const scored = matches
-        .map((candidate) => {
-          const lower = candidate.toLowerCase();
-          let score = 0;
-          if (lower.includes('.m3u8')) score += 100;
-          if (lower.includes('.mpd')) score += 90;
-          if (lower.includes('stream')) score += 20;
-          if (lower.includes('admin-ajax')) score -= 60;
-          return { candidate, score };
-        })
-        .sort((a, b) => b.score - a.score);
-
-      return scored[0]?.candidate || '';
-    }
-
-    const smrtvEmbedToFunction = {
-      '/san-marino-rtv.html': '/.netlify/functions/san-marino-rtv',
-      '/san-marino-rtv-sport.html': '/.netlify/functions/san-marino-rtv-sport',
-    };
-    const directPlaybackHosts = new Set([
-      'bpcdnmanprod.nexttv.ht.hr',
-    ]);
-
-    async function resolveSanMarinoRtvStream(embedUrl) {
-      const fnUrl = smrtvEmbedToFunction[embedUrl];
-      if (!fnUrl) return '';
-
-      try {
-        const resp = await fetch(fnUrl, { cache: 'no-store' });
-        if (!resp.ok) return '';
-        const data = await resp.json();
-        if (!data || !data.live || !data.url) return '';
-        return extractLikelyStreamUrl(data.url);
-      } catch (_) {
-        return '';
-      }
-    }
-
-    async function playChannel(ch, el) {
+    function playChannel(ch, el) {
       document.querySelectorAll('.channel-item').forEach(i => i.classList.remove('active'));
       el.classList.add('active');
       placeholder.style.display = 'none';
@@ -2101,54 +1799,19 @@
       updateStarButton();
       showNowPlaying(ch.name);
 
-      let rawIptvUrl = extractLikelyStreamUrl(ch.iptv_urls?.[0]);
+      const rawIptvUrl = ch.iptv_urls?.[0];
       const ytUrl = ch.youtube_urls?.[0];
       const embedUrl2 = ch.embed_urls?.[0];
 
-      if (!rawIptvUrl && smrtvEmbedToFunction[embedUrl2]) {
-        rawIptvUrl = await resolveSanMarinoRtvStream(embedUrl2);
-        if (!currentChannel || currentChannel.nanoid !== ch.nanoid) return;
-      }
-
-      // Route most external IPTV URLs through the edge proxy to avoid browser CORS failures.
-      // Some providers (e.g., HRT via nexttv.ht.hr) block datacenter/anonymous IPs, so they must stay direct.
+      // Route redirect-based URLs through the server-side proxy to handle CORS
       let iptvUrl = rawIptvUrl;
-      if (rawIptvUrl) {
-        let parsedUrl = null;
-        try {
-          parsedUrl = new URL(rawIptvUrl);
-        } catch (_) {
-          parsedUrl = null;
-        }
-
-        const isHttpStream = parsedUrl?.protocol === 'http:';
-        const isHttpsStream = parsedUrl?.protocol === 'https:';
-        const isExternalStream = parsedUrl && parsedUrl.origin !== window.location.origin;
-        const hostRequiresDirectPlayback = parsedUrl && directPlaybackHosts.has(parsedUrl.hostname.toLowerCase());
-
-        if ((isHttpStream || isHttpsStream) && isExternalStream && !hostRequiresDirectPlayback) {
-          iptvUrl = '/api/stream-proxy?url=' + encodeURIComponent(rawIptvUrl);
-        }
+      if (rawIptvUrl && rawIptvUrl.includes('viamotionhsi.netplus.ch')) {
+        iptvUrl = '/api/stream-proxy?url=' + encodeURIComponent(rawIptvUrl);
       }
 
       if (iptvUrl) {
         iframe.style.display = 'none';
         iframe.src = '';
-
-        video.pause();
-        audio.pause();
-        hls.detachMedia();
-
-        if (ch.isAudio) {
-          activeMedia = audio;
-          video.style.display = 'none';
-          audioVisualizer.style.display = 'flex';
-        } else {
-          activeMedia = video;
-          video.style.display = 'block';
-          audioVisualizer.style.display = 'none';
-        }
-
         customPlayer.classList.add('active');
         customPlayer.classList.add('show-controls');
         customPlayer.classList.add('is-loading');
@@ -2164,9 +1827,9 @@
         qualityMenu.style.display = 'none';
         if (Hls.isSupported()) {
           hls.loadSource(iptvUrl);
-          hls.attachMedia(activeMedia);
-        } else if (activeMedia.canPlayType('application/vnd.apple.mpegurl')) {
-          activeMedia.src = iptvUrl;
+          hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = iptvUrl;
         }
         updatePlayPauseIcon();
       } else if (ytUrl) {
@@ -2205,15 +1868,8 @@
       customPlayer.classList.remove('show-controls');
       customPlayer.classList.remove('is-loading');
       customPlayer.classList.remove('theater-mode');
-      video.pause();
-      audio.pause();
       video.src = '';
-      audio.src = '';
-      audioVisualizer.style.display = 'none';
-      video.style.display = 'block';
-      activeMedia = video;
       hls.stopLoad();
-      hls.detachMedia();
       iframe.style.display = 'none';
       iframe.src = '';
       placeholder.style.display = 'flex';
@@ -2261,7 +1917,7 @@
       setTimeout(() => toast.classList.remove('show'), 2000);
     }
 
-    async function fetchWeather(capital, countryCode, timeZone) {
+    async function fetchWeather(capital, countryCode) {
       const cacheKey = countryCode.toUpperCase();
       if (weatherCache[cacheKey]) {
         displayWeather(weatherCache[cacheKey]);
@@ -2273,38 +1929,29 @@
       document.getElementById('weatherIcon').textContent = '';
       document.getElementById('weatherTemp').textContent = '';
       document.getElementById('weatherCondition').innerHTML = '<span class="weather-loading"><span class="loading-spinner"></span> Loading weather...</span>';
-      document.getElementById('weatherDetails').textContent = '';
 
       try {
-        const normalizedCountryCode = normalizeCountryCode(countryCode);
-        const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(capital)}&count=1&language=en&countryCode=${encodeURIComponent(normalizedCountryCode)}`);
+        const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(capital)}&count=1&language=en`);
         const geoData = await geoRes.json();
         if (!geoData.results || geoData.results.length === 0) {
           weatherBar.classList.remove('visible');
           return;
         }
         const { latitude, longitude } = geoData.results[0];
-        const safeTimeZone = isValidTimeZone(timeZone) ? timeZone : 'auto';
 
-        const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&timezone=${encodeURIComponent(safeTimeZone)}&current=temperature_2m,apparent_temperature,relative_humidity_2m,precipitation,wind_speed_10m,weather_code`);
+        const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`);
         const weatherData = await weatherRes.json();
-        if (!weatherData.current || typeof weatherData.current.temperature_2m !== 'number') {
+        if (!weatherData.current_weather) {
           weatherBar.classList.remove('visible');
           return;
         }
 
         const result = {
-          tempC: Math.round(weatherData.current.temperature_2m),
-          code: weatherData.current.weather_code,
-          windSpeed: typeof weatherData.current.wind_speed_10m === 'number' ? Math.round(weatherData.current.wind_speed_10m) : null,
-          humidity: typeof weatherData.current.relative_humidity_2m === 'number' ? Math.round(weatherData.current.relative_humidity_2m) : null,
-          feelsLikeC: typeof weatherData.current.apparent_temperature === 'number' ? Math.round(weatherData.current.apparent_temperature) : null,
-          precipitationMm: Number(weatherData.current.precipitation || 0)
+          tempC: Math.round(weatherData.current_weather.temperature),
+          code: weatherData.current_weather.weathercode,
+          windSpeed: Math.round(weatherData.current_weather.windspeed)
         };
         result.tempF = Math.round(result.tempC * 9 / 5 + 32);
-        result.feelsLikeF = typeof result.feelsLikeC === 'number'
-          ? Math.round(result.feelsLikeC * 9 / 5 + 32)
-          : null;
 
         weatherCache[cacheKey] = result;
         displayWeather(result);
@@ -2320,12 +1967,6 @@
       document.getElementById('weatherIcon').textContent = condition.icon;
       document.getElementById('weatherTemp').textContent = `${data.tempC}\u00B0C / ${data.tempF}\u00B0F`;
       document.getElementById('weatherCondition').textContent = condition.text;
-      document.getElementById('weatherDetails').innerHTML = `
-        <span>Feels like: ${typeof data.feelsLikeC === 'number' ? `${data.feelsLikeC}\u00B0C / ${data.feelsLikeF}\u00B0F` : '--'}</span>
-        <span>Wind: ${typeof data.windSpeed === 'number' ? `${data.windSpeed} km/h` : '--'}</span>
-        <span>Humidity: ${typeof data.humidity === 'number' ? `${data.humidity}%` : '--'}</span>
-        <span>Precip: ${data.precipitationMm.toFixed(1)} mm</span>
-      `;
       weatherBar.classList.add('visible');
     }
 
