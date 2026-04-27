@@ -89,6 +89,17 @@
     "isGeoBlocked": true
   },
   {
+    "nanoid": "5tcIydPF2VTd28",
+    "name": "Filma24 Family",
+    "iptv_urls": [
+      "https://huhu.to/play/2884562456/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "fG091FxoA2NCwZ",
     "name": "MCI Televisión",
     "iptv_urls": [

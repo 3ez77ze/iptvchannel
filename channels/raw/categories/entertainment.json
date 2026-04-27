@@ -11,28 +11,6 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "FrAYOq62TnqRTL",
-    "name": "2х2",
-    "iptv_urls": [
-      "https://zabava-htlive.cdn.ngenix.net/hls/CH_2X2/variant.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "rus",
-    "country": "ru",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "EEjElvcDWe1Onh",
-    "name": "4U TV",
-    "iptv_urls": [
-      "https://hls.4utv.live/hls/stream.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "fas",
-    "country": "tr",
-    "isGeoBlocked": false
-  },
-  {
     "nanoid": "bl19xd6Od9LNtI",
     "name": "13 Realities",
     "iptv_urls": [
@@ -41,6 +19,17 @@
     "youtube_urls": [],
     "language": "spa",
     "country": "cl",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FrAYOq62TnqRTL",
+    "name": "2х2",
+    "iptv_urls": [
+      "https://zabava-htlive.cdn.ngenix.net/hls/CH_2X2/variant.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "rus",
+    "country": "ru",
     "isGeoBlocked": false
   },
   {
@@ -74,6 +63,17 @@
     "youtube_urls": [],
     "language": "eng",
     "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "EEjElvcDWe1Onh",
+    "name": "4U TV",
+    "iptv_urls": [
+      "https://hls.4utv.live/hls/stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "fas",
+    "country": "tr",
     "isGeoBlocked": false
   },
   {
@@ -375,6 +375,30 @@
     ],
     "language": "eng",
     "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2cInGTDa4pDDRk",
+    "name": "BB VIP 1 (Albania)",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://s365z2.bbvipal.net/player1.php"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "tjAhQGUzaKT34h",
+    "name": "BB VIP 2 (Albania)",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://s365z2.bbvipal.net/player2.php"
+    ],
+    "language": "sqi",
+    "country": "al",
     "isGeoBlocked": false
   },
   {
@@ -741,6 +765,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "A2sNhX8YlGH1Se",
+    "name": "Comedy Central",
+    "iptv_urls": [
+      "https://huhu.to/play/373766808/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "ZdeUwozwvMjsrH",
     "name": "Comet",
     "iptv_urls": [
@@ -839,6 +874,17 @@
     ],
     "language": "por",
     "country": "br",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dzQl8lJ6NqOpI5",
+    "name": "DisneyX (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/701551975/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
     "isGeoBlocked": false
   },
   {
@@ -1068,6 +1114,30 @@
     "youtube_urls": [],
     "language": "mar",
     "country": "in",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0cmauqkm_Yo7Eo",
+    "name": "Ferma VIP 1 (Albania)",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://p1.fermavip.live/player1.php"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2utXQOWU_pqNhn",
+    "name": "Ferma VIP 2 (Albania)",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://p1.fermavip.live/player1.php"
+    ],
+    "language": "sqi",
+    "country": "al",
     "isGeoBlocked": false
   },
   {

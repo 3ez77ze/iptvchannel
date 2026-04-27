@@ -324,6 +324,50 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "S0u90WazZxX4Ec",
+    "name": "FILMA24 AZIATIK (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1549277721/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3bNK0qZgVMWASL",
+    "name": "Filma24 Drama (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/4231522809/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5tcIydPF2VTd28",
+    "name": "Filma24 Family",
+    "iptv_urls": [
+      "https://huhu.to/play/2884562456/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "X5z9-e1mWiL2P6",
+    "name": "FILMA24 fantasy (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/812889919/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "lRHRzjgUVRLYir",
     "name": "Filmex (Xumo)",
     "iptv_urls": [
@@ -533,6 +577,17 @@
     "youtube_urls": [],
     "language": "eng",
     "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "-_BePhOiWQtqds",
+    "name": "Kinema (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/34330458/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
     "isGeoBlocked": false
   },
   {

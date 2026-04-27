@@ -3,7 +3,7 @@
     "nanoid": "Rt1mK8qVY3p2Ld",
     "name": "3sat HD (Germany)",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/3sathd/browser-HLS8/3sathd.m3u8"
+      "https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1399,9 +1399,9 @@
   },
   {
     "nanoid": "3mitNJhmu37TMn",
-    "name": "Super RTL Plus",
+    "name": "Super RTL (Germany)",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/superrtl/browser-HLS8/superrtl.m3u8"
+      "https://huhu.to/play/1077497828/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1740,17 +1740,6 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "Rbcaed64dSHjvH",
-    "name": "World of Freesports",
-    "iptv_urls": [
-      "https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-mainstreammediafreesportsintl-rakuten/CDN/master.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "",
-    "country": "de",
-    "isGeoBlocked": false
-  },
-  {
     "nanoid": "45XxYFkjvvapSW",
     "name": "Prosieben MAXX",
     "iptv_urls": [
@@ -1763,9 +1752,9 @@
   },
   {
     "nanoid": "YDLNu8kgycGTu6",
-    "name": "DisneyX",
+    "name": "DisneyX (Germany)",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/disneychannelde/browser-HLS8/disneychannelde.m3u8"
+      "https://huhu.to/play/701551975/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1774,9 +1763,9 @@
   },
   {
     "nanoid": "b1UnjU7rERO5zD",
-    "name": "RTL Nitro",
+    "name": "RTL Nitro (Germany)",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/rtlnitro/browser-HLS8/rtlnitro.m3u8"
+      "https://huhu.to/play/3797017908/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1785,9 +1774,9 @@
   },
   {
     "nanoid": "HSP3VT1jBdH6PM",
-    "name": "RTL HD",
+    "name": "RTL HD (Germany)",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/rtl/browser-HLS8/rtl.m3u8"
+      "https://huhu.to/play/2728119673/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1807,9 +1796,9 @@
   },
   {
     "nanoid": "kgDBQ1ywytS8Ps",
-    "name": "RTL Zwei",
+    "name": "RTL 2 (Germany)",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/rtl2/browser-HLS8/rtl2.m3u8"
+      "https://huhu.to/play/1758367531/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1818,9 +1807,9 @@
   },
   {
     "nanoid": "KvubBUhYvnjHn-",
-    "name": "Comedy Central HD",
+    "name": "Comedy Central",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/comedycentral/browser-HLS8/comedycentral.m3u8"
+      "https://huhu.to/play/373766808/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1829,9 +1818,9 @@
   },
   {
     "nanoid": "tvbUhtaFYB4dE2",
-    "name": "Vox HD",
+    "name": "Vox",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/vox/browser-HLS8/vox.m3u8"
+      "https://huhu.to/play/3622161112/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1840,9 +1829,9 @@
   },
   {
     "nanoid": "dGLOj62m1kpm6o",
-    "name": "N24/WELT HD",
+    "name": "WELT",
     "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/n24/browser-HLS8/n24.m3u8"
+      "https://welt.personalstream.tv/v1/master.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -1851,9 +1840,9 @@
   },
   {
     "nanoid": "4m_RGMwiQDdL24",
-    "name": "Sat.1",
+    "name": "Sat.1 (Germany)",
     "iptv_urls": [
-      "https://s6.hopslan.com/sat1z/tracks-v1a1/mono.m3u8"
+      "https://huhu.to/play/4122072531/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",
@@ -2074,6 +2063,127 @@
     "name": "MDR Sachsen",
     "iptv_urls": [
       "https://mdr-live.ard-mcdn.de/mdr/sa/hls/de/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aSerFnrgD3zKx1",
+    "name": "Sky Bundesliga 1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/1554081161/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Ngw2pscZO2Xp6G",
+    "name": "Sky Bundesliga 2 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/2578153887/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "yA-3PSc9Sb2kIx",
+    "name": "Sky Bundesliga (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/672710480/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4mEcT3ofr68S7G",
+    "name": "Telekom Bundesliga 1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/4185437077/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lQTHCvCapm1u7E",
+    "name": "Telekom Bundesliga 3",
+    "iptv_urls": [
+      "https://huhu.to/play/2209931509/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9P1oEDrFw7Durv",
+    "name": "Telekom Bundesliga 4",
+    "iptv_urls": [
+      "https://huhu.to/play/832060645/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H54djB9IlOCMpL",
+    "name": "Telekom Bundesliga 5",
+    "iptv_urls": [
+      "https://huhu.to/play/217584981/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sYCGiws3NteEBl",
+    "name": "Sportdigital Fußball (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/2293549580/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gd8GEv71YyQhWU",
+    "name": "DAZN 1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/263339334/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZsQfiym7xuggpE",
+    "name": "DAZN 2 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/1209157526/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PwfUPil7ITdnpF",
+    "name": "Sky Sports F1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/2161191460/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "deu",

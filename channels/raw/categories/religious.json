@@ -2827,6 +2827,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "MsMCVe0iyRG_1F",
+    "name": "KS Islam",
+    "iptv_urls": [
+      "https://huhu.to/play/355114739/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "KcyLCltBjv6u8V",
     "name": "KSCE Vida Cristiana",
     "iptv_urls": [

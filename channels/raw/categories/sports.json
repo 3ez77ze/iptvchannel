@@ -122,6 +122,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "KnDGP2nOZIagPj",
+    "name": "Astrakhan RU",
+    "iptv_urls": [
+      "https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v5a1/mono.ts.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "v8Zzxjpx6SD9DW",
     "name": "ATG Live",
     "iptv_urls": [
@@ -220,6 +231,28 @@
     ],
     "language": "",
     "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gd8GEv71YyQhWU",
+    "name": "DAZN 1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/263339334/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ZsQfiym7xuggpE",
+    "name": "DAZN 2 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/1209157526/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
     "isGeoBlocked": false
   },
   {
@@ -825,6 +858,39 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "4t1a1-r8-Eng_2",
+    "name": "Redbull TV 1 HD",
+    "iptv_urls": [
+      "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sCAoZaCLvCSGDL",
+    "name": "Redbull TV 2 HD",
+    "iptv_urls": [
+      "https://e7c8f7d5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVi0xX0hMUw/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "cPfqZJ9CdLpaOr",
+    "name": "Redbull TV 3 HD",
+    "iptv_urls": [
+      "https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "at",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "DlnA3363JGvPGt",
     "name": "RightNow TV",
     "iptv_urls": [
@@ -848,6 +914,28 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "Kx9mRvT2pLwQnF",
+    "name": "San Marino RTV Sport",
+    "iptv_urls": [
+      "https://smrtvlive.b-cdn.net/bcdn_token=hlBAxdr7YUFKwfN97mkxGF1iitrcWqiItdk7p83L7oU&token_path=%2Flive&expires=1772977097/live/smrtv-ch02/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ita",
+    "country": "sm",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "W6p2kdhMOYyNp9",
+    "name": "Setanta Sports",
+    "iptv_urls": [
+      "http://alpha.tv.online.tm/hls/ch004_720/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "tuk",
+    "country": "tm",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "PNu6nogB9kG5g5",
     "name": "Sharjah Sports",
     "iptv_urls": [
@@ -860,6 +948,50 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "yA-3PSc9Sb2kIx",
+    "name": "Sky Bundesliga (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/672710480/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "aSerFnrgD3zKx1",
+    "name": "Sky Bundesliga 1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/1554081161/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Ngw2pscZO2Xp6G",
+    "name": "Sky Bundesliga 2 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/2578153887/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "PwfUPil7ITdnpF",
+    "name": "Sky Sports F1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/2161191460/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "SIki0bxRn3r6qL",
     "name": "Sport Italia",
     "iptv_urls": [
@@ -869,6 +1001,17 @@
     "youtube_urls": [],
     "language": "ita",
     "country": "it",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "sYCGiws3NteEBl",
+    "name": "Sportdigital Fußball (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/2293549580/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
     "isGeoBlocked": false
   },
   {
@@ -961,6 +1104,50 @@
     "youtube_urls": [],
     "language": "spa",
     "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "4mEcT3ofr68S7G",
+    "name": "Telekom Bundesliga 1 (Germany)",
+    "iptv_urls": [
+      "https://huhu.to/play/4185437077/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lQTHCvCapm1u7E",
+    "name": "Telekom Bundesliga 3",
+    "iptv_urls": [
+      "https://huhu.to/play/2209931509/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9P1oEDrFw7Durv",
+    "name": "Telekom Bundesliga 4",
+    "iptv_urls": [
+      "https://huhu.to/play/832060645/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "H54djB9IlOCMpL",
+    "name": "Telekom Bundesliga 5",
+    "iptv_urls": [
+      "https://huhu.to/play/217584981/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
     "isGeoBlocked": false
   },
   {
@@ -1298,72 +1485,6 @@
     "youtube_urls": [],
     "language": "rus",
     "country": "by",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "4t1a1-r8-Eng_2",
-    "name": "Redbull TV 1 HD",
-    "iptv_urls": [
-      "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "deu",
-    "country": "at",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "sCAoZaCLvCSGDL",
-    "name": "Redbull TV 2 HD",
-    "iptv_urls": [
-      "https://e7c8f7d5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVi0xX0hMUw/playlist.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "deu",
-    "country": "at",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "cPfqZJ9CdLpaOr",
-    "name": "Redbull TV 3 HD",
-    "iptv_urls": [
-      "https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "deu",
-    "country": "at",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "KnDGP2nOZIagPj",
-    "name": "Astrakhan RU",
-    "iptv_urls": [
-      "https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v5a1/mono.ts.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "rus",
-    "country": "ru",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "W6p2kdhMOYyNp9",
-    "name": "Setanta Sports",
-    "iptv_urls": [
-      "http://alpha.tv.online.tm/hls/ch004_720/index.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "tuk",
-    "country": "tm",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "Kx9mRvT2pLwQnF",
-    "name": "San Marino RTV Sport",
-    "iptv_urls": [
-      "https://smrtvlive.b-cdn.net/bcdn_token=hlBAxdr7YUFKwfN97mkxGF1iitrcWqiItdk7p83L7oU&token_path=%2Flive&expires=1772977097/live/smrtv-ch02/playlist.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "ita",
-    "country": "sm",
     "isGeoBlocked": false
   }
 ]
