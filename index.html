@@ -1915,6 +1915,16 @@
       'bpcdnmanprod.nexttv.ht.hr',
     ]);
 
+    function isHuhuToUrl(url) {
+      try {
+        const parsed = new URL(url);
+        const hostname = parsed.hostname.toLowerCase();
+        return hostname === 'huhu.to' || hostname.endsWith('.huhu.to');
+      } catch (_) {
+        return false;
+      }
+    }
+
     async function resolveSanMarinoRtvStream(embedUrl) {
       const fnUrl = smrtvEmbedToFunction[embedUrl];
       if (!fnUrl) return '';
@@ -1945,6 +1955,18 @@
       if (!rawIptvUrl && smrtvEmbedToFunction[embedUrl2]) {
         rawIptvUrl = await resolveSanMarinoRtvStream(embedUrl2);
         if (!currentChannel || currentChannel.nanoid !== ch.nanoid) return;
+      }
+
+      if (rawIptvUrl && isHuhuToUrl(rawIptvUrl)) {
+        customPlayer.classList.remove('active');
+        customPlayer.classList.remove('show-controls');
+        customPlayer.classList.remove('is-loading');
+        hls.stopLoad();
+        video.src = '';
+        hidePing();
+        iframe.style.display = 'block';
+        iframe.src = rawIptvUrl;
+        return;
       }
 
       // Route most external IPTV URLs through the edge proxy to avoid browser CORS failures.
