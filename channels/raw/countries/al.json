@@ -1,7 +1,7 @@
 [
   {
     "nanoid": "aMkeRUPupSrANZ",
-    "name": "A2",
+    "name": "A2 (Albania)",
     "iptv_urls": [
       "https://tv.a2news.com/live/smil:a2cnnweb.stream.smil/chunklist_w2034475566_b2128000_slalb.m3u8"
     ],
@@ -12,7 +12,7 @@
   },
   {
     "nanoid": "pGI92O7SX6ZwCX",
-    "name": "CNA (1080p)",
+    "name": "CNA (1080p) (Albania)",
     "iptv_urls": [
       "https://live1.mediadesk.al/cnatvlive.m3u8"
     ],
@@ -34,9 +34,9 @@
   },
   {
     "nanoid": "3HR60WW2TP6Sn5",
-    "name": "News 24",
+    "name": "News24 (Albania)",
     "iptv_urls": [
-      "https://tv.balkanweb.com/news24/livestream/playlist.m3u8"
+      "https://tv.balkanweb.com/news24/livestream/chunks.m3u8"
     ],
     "youtube_urls": [],
     "language": "sqi",
@@ -45,7 +45,7 @@
   },
   {
     "nanoid": "MK5j1Y4k8niPNJ",
-    "name": "Ora News",
+    "name": "Ora News (Albania)",
     "iptv_urls": [
       "https://live1.mediadesk.al/oranews.m3u8"
     ],
@@ -56,7 +56,7 @@
   },
   {
     "nanoid": "nKRKgWmp0ZuIb0",
-    "name": "Syri",
+    "name": "Syri TV (Albania)",
     "iptv_urls": [
       "https://stream.syritv.al/live/syritv/playlist.m3u8"
     ],
@@ -67,7 +67,7 @@
   },
   {
     "nanoid": "16gGAjZZtes1Qk",
-    "name": "Zjarr TV",
+    "name": "Zjarr TV (Albania)",
     "iptv_urls": [
       "https://zjarr.future.al/hls/playlist.m3u8"
     ],
@@ -78,7 +78,7 @@
   },
   {
     "nanoid": "w6jLITNdd3mhSk",
-    "name": "Tropoja TV",
+    "name": "Tropoja TV (Albania)",
     "iptv_urls": [
       "https://live.prostream.al/al/smil:tropojatv.smil/chunklist_w1487423895_b262800_sleng.m3u8"
     ],
@@ -111,7 +111,7 @@
   },
   {
     "nanoid": "Qw7dFpXk5zMbYa",
-    "name": "Vision Plus",
+    "name": "Vizion Plus (Albania)",
     "iptv_urls": [
       "https://tringliveviz.akamaized.net/delta/105/out/u/qwaszxerdfcvrtryuy.m3u8"
     ],
@@ -122,7 +122,7 @@
   },
   {
     "nanoid": "R3fLaIPeXSy2kS",
-    "name": "ALBUK HD",
+    "name": "AlbUK (Albania)",
     "iptv_urls": [
       "https://albuk.albuk.co:8443/albuk/albuk.stream/chunklist_w9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.m3u8"
     ],
@@ -133,7 +133,7 @@
   },
   {
     "nanoid": "kDw6T7N5m8AFvL",
-    "name": "BB VIP 1",
+    "name": "BB VIP 1 (Albania)",
     "iptv_urls": [],
     "youtube_urls": [],
     "embed_urls": [
@@ -145,7 +145,7 @@
   },
   {
     "nanoid": "mT2vY7nK4pQxLd",
-    "name": "BB VIP 2",
+    "name": "BB VIP 2 (Albania)",
     "iptv_urls": [],
     "youtube_urls": [],
     "embed_urls": [
@@ -219,6 +219,250 @@
     "embed_urls": [
       "/rtsh-sat.html"
     ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VwzfQmYfVJUT5D",
+    "name": "RTSH 1 (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1224239029/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "w6kbFdahk0qPrK",
+    "name": "RTSH 24 (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/3846665415/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "S0u90WazZxX4Ec",
+    "name": "FILMA24 AZIATIK (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1549277721/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "X5z9-e1mWiL2P6",
+    "name": "FILMA24 fantasy (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/812889919/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "3bNK0qZgVMWASL",
+    "name": "Filma24 Drama (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/4231522809/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5tcIydPF2VTd28",
+    "name": "Filma24 Family",
+    "iptv_urls": [
+      "https://huhu.to/play/2884562456/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "FlYvOE1bbqCh5R",
+    "name": "Cufo (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/49274168/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "lMoenRD216gAQR",
+    "name": "Bang Bang (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/3937801799/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "dfrSFPsbKiNZxn",
+    "name": "RTSH Shqip (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1800075235/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "-_BePhOiWQtqds",
+    "name": "Kinema (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/34330458/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "J1xpdG71MPVym_",
+    "name": "Klan Plus (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1974890814/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Wyn0duSoqDbH1U",
+    "name": "Tring World (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/397168433/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "Bmw40sPrNJHIw3",
+    "name": "Tring History (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1541372371/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "9HRzjD4bp3NlJg",
+    "name": "Tring International",
+    "iptv_urls": [
+      "https://huhu.to/play/928361076/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "puO9aJmvvPqqYL",
+    "name": "Tring Kids",
+    "iptv_urls": [
+      "https://huhu.to/play/3865243659/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "0cmauqkm_Yo7Eo",
+    "name": "Ferma VIP 1 (Albania)",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://p1.fermavip.live/player1.php"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "2utXQOWU_pqNhn",
+    "name": "Ferma VIP 2 (Albania)",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://p1.fermavip.live/player1.php"
+    ],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "5X1zO3VbGiHuk5",
+    "name": "TV Klan (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/1013200858/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "118rux-MqW5r19",
+    "name": "Ulqini TV",
+    "iptv_urls": [
+      "https://huhu.to/play/3448134024/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MsMCVe0iyRG_1F",
+    "name": "KS Islam",
+    "iptv_urls": [
+      "https://huhu.to/play/355114739/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SSLMmDuDOqjS7O",
+    "name": "Top Channel",
+    "iptv_urls": [
+      "https://huhu.to/play/2811365982/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "G7j0B24sySvE2Z",
+    "name": "RTSH Femije",
+    "iptv_urls": [
+      "https://huhu.to/play/34330458/index.m3u8"
+    ],
+    "youtube_urls": [],
     "language": "sqi",
     "country": "al",
     "isGeoBlocked": false

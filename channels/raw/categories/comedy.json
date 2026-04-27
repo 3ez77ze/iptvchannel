@@ -1,27 +1,5 @@
 [
   {
-    "nanoid": "gOima8j8Qx8bOX",
-    "name": "3Cat El búnquer",
-    "iptv_urls": [
-      "https://fast-tailor.3catdirectes.cat/v1/channel/bunquer/hls.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "cat",
-    "country": "es",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "MsBPAtiznwuBpL",
-    "name": "3Cat Plats bruts",
-    "iptv_urls": [
-      "https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8"
-    ],
-    "youtube_urls": [],
-    "language": "cat",
-    "country": "es",
-    "isGeoBlocked": false
-  },
-  {
     "nanoid": "CYPaX2UVL5PBUV",
     "name": "13 Humor",
     "iptv_urls": [
@@ -41,6 +19,28 @@
     "youtube_urls": [],
     "language": "eng",
     "country": "us",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "gOima8j8Qx8bOX",
+    "name": "3Cat El búnquer",
+    "iptv_urls": [
+      "https://fast-tailor.3catdirectes.cat/v1/channel/bunquer/hls.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "cat",
+    "country": "es",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MsBPAtiznwuBpL",
+    "name": "3Cat Plats bruts",
+    "iptv_urls": [
+      "https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "cat",
+    "country": "es",
     "isGeoBlocked": false
   },
   {
@@ -107,6 +107,17 @@
     ],
     "language": "eng",
     "country": "uk",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "A2sNhX8YlGH1Se",
+    "name": "Comedy Central",
+    "iptv_urls": [
+      "https://huhu.to/play/373766808/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "deu",
+    "country": "de",
     "isGeoBlocked": false
   },
   {
