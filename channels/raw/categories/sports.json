@@ -1486,5 +1486,16 @@
     "language": "rus",
     "country": "by",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "TringSport1AL1",
+    "name": "Tring Sport 1 (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/665986380/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
   }
 ]
