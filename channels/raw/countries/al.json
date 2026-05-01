@@ -416,7 +416,7 @@
     "nanoid": "5X1zO3VbGiHuk5",
     "name": "TV Klan (Albania)",
     "iptv_urls": [
-      "https://huhu.to/play/1013200858/index.m3u8"
+      "https://huhu.to/play/2085629786/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "sqi",
@@ -446,10 +446,21 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "TringSport1AL1",
+    "name": "Tring Sport 1 (Albania)",
+    "iptv_urls": [
+      "https://huhu.to/play/665986380/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "sqi",
+    "country": "al",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "SSLMmDuDOqjS7O",
     "name": "Top Channel",
     "iptv_urls": [
-      "https://huhu.to/play/2811365982/index.m3u8"
+      "https://huhu.to/play/1347567064/index.m3u8"
     ],
     "youtube_urls": [],
     "language": "sqi",
