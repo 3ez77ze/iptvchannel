@@ -981,6 +981,85 @@
     ::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #3a3a4a; }
 
+    /* ---- VPN Modal ---- */
+    .vpn-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .vpn-modal-overlay.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .vpn-modal {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-xl);
+      padding: 32px 28px 24px;
+      max-width: 380px;
+      width: 90%;
+      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+      transform: scale(0.92);
+      transition: transform 0.2s ease;
+    }
+    .vpn-modal-overlay.visible .vpn-modal {
+      transform: scale(1);
+    }
+    .vpn-modal-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(99,102,241,0.15);
+      border: 1px solid rgba(99,102,241,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+    }
+    .vpn-modal-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+    .vpn-modal-body {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .vpn-modal-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 11px 32px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background var(--transition-fast), box-shadow var(--transition-medium), transform var(--transition-fast);
+      box-shadow: 0 4px 16px var(--accent-glow);
+      margin-top: 4px;
+    }
+    .vpn-modal-btn:hover {
+      background: var(--accent-hover);
+      box-shadow: 0 6px 24px var(--accent-glow);
+    }
+    .vpn-modal-btn:active { transform: scale(0.96); }
+
     /* ---- Toast ---- */
     .fav-toast {
       position: fixed;
@@ -1182,6 +1261,16 @@
 
   <div class="fav-toast" id="favToast"></div>
 
+  <!-- VPN Notice Modal -->
+  <div class="vpn-modal-overlay" id="vpnModalOverlay">
+    <div class="vpn-modal">
+      <div class="vpn-modal-icon">🔒</div>
+      <div class="vpn-modal-title">VPN Required</div>
+      <div class="vpn-modal-body">To watch this channel, you must have a VPN and change to Turkey to watch it.</div>
+      <button class="vpn-modal-btn" id="vpnModalOkBtn">Ok!</button>
+    </div>
+  </div>
+
   <script>
     const video = document.getElementById('videoPlayer');
     const iframe = document.getElementById('ytPlayer');
@@ -1194,6 +1283,26 @@
     let currentChannel = null;
     let timeInterval = null;
     let favorites = JSON.parse(localStorage.getItem('cookiestv_favs') || '[]');
+
+    // VPN modal
+    const vpnModalOverlay = document.getElementById('vpnModalOverlay');
+    const vpnModalOkBtn = document.getElementById('vpnModalOkBtn');
+    let vpnModalResolve = null;
+
+    function showVpnModal() {
+      return new Promise((resolve) => {
+        vpnModalResolve = resolve;
+        vpnModalOverlay.classList.add('visible');
+      });
+    }
+
+    vpnModalOkBtn.addEventListener('click', () => {
+      vpnModalOverlay.classList.remove('visible');
+      if (vpnModalResolve) {
+        vpnModalResolve(true);
+        vpnModalResolve = null;
+      }
+    });
 
     const nowPlaying = document.getElementById('nowPlaying');
     const nowPlayingName = document.getElementById('nowPlayingName');
@@ -1913,6 +2022,8 @@
     };
     const directPlaybackHosts = new Set([
       'bpcdnmanprod.nexttv.ht.hr',
+      'tv-trtspor1.medya.trt.com.tr',
+      'tv-trtspor2.medya.trt.com.tr',
     ]);
 
     function isHuhuToUrl(url) {
@@ -1941,6 +2052,11 @@
     }
 
     async function playChannel(ch, el) {
+      // Show VPN notice for TRT Spor before loading
+      if (ch.vpnRequired || ch.nanoid === 'TRTSporLive001') {
+        await showVpnModal();
+      }
+
       document.querySelectorAll('.channel-item').forEach(i => i.classList.remove('active'));
       el.classList.add('active');
       placeholder.style.display = 'none';
