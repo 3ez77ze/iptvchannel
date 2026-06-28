@@ -1309,6 +1309,20 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "TRTSporLive001",
+    "name": "TRT Spor",
+    "iptv_urls": [
+      "https://tv-trtspor1.medya.trt.com.tr/master.m3u8",
+      "https://tv-trtspor2.medya.trt.com.tr/master.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "tur",
+    "country": "tr",
+    "isGeoBlocked": true,
+    "vpnRequired": true
+  },
+  {
     "nanoid": "0Rg9Ao8zmETQkR",
     "name": "TRT Türk",
     "iptv_urls": [
