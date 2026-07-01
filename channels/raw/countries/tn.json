@@ -1,5 +1,18 @@
 [
   {
+    "nanoid": "WXdeELwI70zmj51",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "tn",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "0vWRP5qYJXkBiC",
     "name": "Mosaique FM",
     "iptv_urls": [
@@ -11,24 +24,33 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "tn",
+    "nanoid": "RTArabTN000000"
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "tn",
+    "nanoid": "TRTArabTN000000"
+  },
+  {
     "nanoid": "AtEof85QR5byYd",
     "name": "Watania Replay",
     "iptv_urls": [],
     "youtube_urls": [
       "https://www.youtube-nocookie.com/embed/nABrZh42O_E"
-    ],
-    "language": "ara",
-    "country": "tn",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "WXdeELwI70zmj51",
-    "name": "Al Jazeera Arabic",
-    "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
     ],
     "language": "ara",
     "country": "tn",

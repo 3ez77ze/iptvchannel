@@ -180,5 +180,27 @@
     "language": "ara",
     "country": "qa",
     "isGeoBlocked": false
+  },
+  {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "qa",
+    "nanoid": "RTArabQA000000"
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "qa",
+    "nanoid": "TRTArabQA000000"
   }
 ]

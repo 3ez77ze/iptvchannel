@@ -3458,6 +3458,28 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "HolyKaabaLive0",
+    "name": "Masjid al-Haram & The Holy Kaaba Live",
+    "iptv_urls": [
+      "https://win.holol.com/live/quran/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MeccaTVLive00",
+    "name": "Mecca TV Live",
+    "iptv_urls": [
+      "https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "A8yIwT2axQkqtt",
     "name": "Media Sunnah Aceh TV",
     "iptv_urls": [],

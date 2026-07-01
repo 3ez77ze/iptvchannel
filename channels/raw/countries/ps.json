@@ -1,11 +1,24 @@
 [
   {
-    "nanoid": "Aq3mLz9pTnV2xR",
-    "name": "Al-Aqsa TV",
+    "nanoid": "Xp7dQm2rFs8kLn",
+    "name": "Ajya Lint TV",
     "iptv_urls": [
-      "http://167.172.161.13/hls/feedspare/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8"
+      "http://htvajyalint.mada.ps:8888/ajyalint/index.m3u8"
     ],
     "youtube_urls": [],
+    "language": "ara",
+    "country": "ps",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "VBu2pzoP26H5CDL",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
     "language": "ara",
     "country": "ps",
     "isGeoBlocked": false
@@ -33,10 +46,10 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "Xp7dQm2rFs8kLn",
-    "name": "Ajya Lint TV",
+    "nanoid": "Aq3mLz9pTnV2xR",
+    "name": "Al-Aqsa TV",
     "iptv_urls": [
-      "http://htvajyalint.mada.ps:8888/ajyalint/index.m3u8"
+      "http://167.172.161.13/hls/feedspare/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8"
     ],
     "youtube_urls": [],
     "language": "ara",
@@ -166,6 +179,17 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "ps",
+    "nanoid": "RTArabPS000000"
+  },
+  {
     "nanoid": "symrkwvSEOlnh3",
     "name": "Shabab FM",
     "iptv_urls": [
@@ -175,6 +199,17 @@
     "language": "ara",
     "country": "ps",
     "isGeoBlocked": false
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "ps",
+    "nanoid": "TRTArabPS000000"
   },
   {
     "nanoid": "zJ9zGl534t9s19",
@@ -194,19 +229,6 @@
       "https://htvint.mada.ps/orient/tracks-v1a1/mono.m3u8"
     ],
     "youtube_urls": [],
-    "language": "ara",
-    "country": "ps",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "VBu2pzoP26H5CDL",
-    "name": "Al Jazeera Arabic",
-    "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
     "language": "ara",
     "country": "ps",
     "isGeoBlocked": false
