@@ -46,5 +46,41 @@
     "language": "mon",
     "country": "mn",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MNBMongolia",
+    "name": "MNB",
+    "iptv_urls": [
+      "https://live.mnb.mn/hls/mnb.stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MNBMongolinMedee",
+    "name": "MNB Mongolin Medee",
+    "iptv_urls": [
+      "https://live.mnb.mn/hls/mn2.stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MNBWorldMongolia",
+    "name": "MNB World",
+    "iptv_urls": [
+      "https://live.mnb.mn/hls/mnb_world.stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
   }
 ]

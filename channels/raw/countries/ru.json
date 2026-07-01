@@ -3,7 +3,7 @@
     "nanoid": "FrAYOq62TnqRTL",
     "name": "2х2",
     "iptv_urls": [
-      "https://zabava-htlive.cdn.ngenix.net/hls/CH_2X2/variant.m3u8"
+      "https://bl.rutube.ru/livestream/392b4686b770bae2da6bf5ac4574add5/index.m3u8?s=tenr-yHXUv1wibfka78s2A&e=2068731801&scheme=https"
     ],
     "youtube_urls": [],
     "language": "rus",
@@ -1720,6 +1720,39 @@
     "embed_urls": [
       "https://ok.ru/videoembed/1115050286838"
     ],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ProdvizhenieRussia",
+    "name": "Prodvizhenie",
+    "iptv_urls": [
+      "https://origin5.mediacdn.ru/live/prodvizhenie_new/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ProsveshchenieRussia",
+    "name": "Prosveshchenie",
+    "iptv_urls": [
+      "https://cdn-01.bonus-tv.ru/prosveschenie_edge/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "rus",
+    "country": "ru",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "RBKTVRussia",
+    "name": "RBK-TV",
+    "iptv_urls": [
+      "https://e4-online-video.rbc.ru/online2/rbctvhd_1080p/index.m3u8"
+    ],
+    "youtube_urls": [],
     "language": "rus",
     "country": "ru",
     "isGeoBlocked": false
