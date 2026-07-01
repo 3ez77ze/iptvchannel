@@ -79,6 +79,19 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "BMYooBhokLO84pU",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "ae",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "axtrtUohLCP3GM",
     "name": "Al Mashhad",
     "iptv_urls": [],
@@ -223,6 +236,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "g7wYYax7kr7tPd",
+    "name": "DW Arabic",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/AGkp2AL8e7o"
+    ],
+    "language": "ara",
+    "country": "ae",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "NCWWidJrVWnWto",
     "name": "Fujairah TV",
     "iptv_urls": [
@@ -309,6 +333,17 @@
     "language": "ara",
     "country": "ae",
     "isGeoBlocked": false
+  },
+  {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "ae",
+    "nanoid": "RTArabAE000000"
   },
   {
     "nanoid": "OijQbjwV7a9kgP",
@@ -416,6 +451,17 @@
     "isGeoBlocked": false
   },
   {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "ae",
+    "nanoid": "TRTArabAE000000"
+  },
+  {
     "nanoid": "rbtvbfV1OrLd1T",
     "name": "Watar Radio",
     "iptv_urls": [
@@ -433,30 +479,6 @@
       "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/yas_1/yas_1_hls_nd/index.m3u8"
     ],
     "youtube_urls": [],
-    "language": "ara",
-    "country": "ae",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "g7wYYax7kr7tPd",
-    "name": "DW Arabic",
-    "iptv_urls": [],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/AGkp2AL8e7o"
-    ],
-    "language": "ara",
-    "country": "ae",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "BMYooBhokLO84pU",
-    "name": "Al Jazeera Arabic",
-    "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
     "language": "ara",
     "country": "ae",
     "isGeoBlocked": false

@@ -1,5 +1,18 @@
 [
   {
+    "nanoid": "ZNChjJumUy6ihAE",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "dz",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "2hs4FzDgKk1l2e",
     "name": "Almagharibia TV: المغاربية",
     "iptv_urls": [],
@@ -22,6 +35,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "VpVdpzFiEnDnef",
+    "name": "Canal Alergie",
+    "iptv_urls": [
+      "https://viamotionhsi.netplus.ch/live/eds/canalalgerie/browser-HLS8/canalalgerie.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "dz",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "bNjt1Zyln6UiRM",
     "name": "CNA",
     "iptv_urls": [
@@ -33,27 +57,25 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "ZNChjJumUy6ihAE",
-    "name": "Al Jazeera Arabic",
+    "name": "RT Arabic",
     "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
-    "language": "ara",
-    "country": "dz",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "VpVdpzFiEnDnef",
-    "name": "Canal Alergie",
-    "iptv_urls": [
-      "https://viamotionhsi.netplus.ch/live/eds/canalalgerie/browser-HLS8/canalalgerie.m3u8"
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
     ],
     "youtube_urls": [],
     "language": "ara",
+    "isGeoBlocked": false,
     "country": "dz",
-    "isGeoBlocked": false
+    "nanoid": "RTArabDZ000000"
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "dz",
+    "nanoid": "TRTArabDZ000000"
   }
 ]

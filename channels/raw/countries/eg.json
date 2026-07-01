@@ -11,6 +11,19 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "ig13BaPTL1BeX7M",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "eg",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "WErO3slydR02br",
     "name": "Alghad TV: قناة الغد",
     "iptv_urls": [],
@@ -78,12 +91,13 @@
   },
   {
     "nanoid": "kT1Cq9so59yeNW",
-    "name": "Elsharq TV",
+    "name": "Elsharq",
     "iptv_urls": [
-      "https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8"
+      "https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8",
+      "https://mn-nl.mncdn.com/elsharq_live/live/chunklist.m3u8"
     ],
     "youtube_urls": [],
-    "language": "",
+    "language": "ara",
     "country": "eg",
     "isGeoBlocked": false
   },
@@ -154,25 +168,34 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "eg",
+    "nanoid": "RTArabEG000000"
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "eg",
+    "nanoid": "TRTArabEG000000"
+  },
+  {
     "nanoid": "sq4B9IaZBUPu1Y",
     "name": "Watan TV",
     "iptv_urls": [
       "https://rp.tactivemedia.com/watantv_source/live/playlist.m3u8"
     ],
     "youtube_urls": [],
-    "language": "ara",
-    "country": "eg",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "ig13BaPTL1BeX7M",
-    "name": "Al Jazeera Arabic",
-    "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
     "language": "ara",
     "country": "eg",
     "isGeoBlocked": false

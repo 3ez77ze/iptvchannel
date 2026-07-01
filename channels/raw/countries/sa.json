@@ -172,6 +172,28 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "mnGrOVLP3AcawZ",
+    "name": "BBC Arabic",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/UH09bpqGXvM"
+    ],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "fRY4lX1ruplDNF",
+    "name": "DW Arabic",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/AGkp2AL8e7o"
+    ],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "Ys1fR7qaVevN2A",
     "name": "Gumball",
     "iptv_urls": [],
@@ -261,6 +283,17 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "HolyKaabaLive0",
+    "name": "Masjid al-Haram & The Holy Kaaba Live",
+    "iptv_urls": [
+      "https://win.holol.com/live/quran/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "AQGmKDckGE5Qe6",
     "name": "MBC Loud",
     "iptv_urls": [
@@ -268,6 +301,17 @@
     ],
     "youtube_urls": [],
     "language": "eng",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MeccaTVLive00",
+    "name": "Mecca TV Live",
+    "iptv_urls": [
+      "https://media2.streambrothers.com:1936/8122/8122/playlist.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
     "country": "sa",
     "isGeoBlocked": false
   },
@@ -338,45 +382,23 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "sa",
+    "nanoid": "RTArabSA000000"
+  },
+  {
     "nanoid": "V7Gca2UgeJjvCP",
     "name": "Saudia Radio",
     "iptv_urls": [
       "https://live.kwikmotion.com/sbrksasaudiaradiolive/srpksasaudiaradio/playlist.m3u8"
     ],
     "youtube_urls": [],
-    "language": "ara",
-    "country": "sa",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "gc9Dx83f1hgp7k",
-    "name": "العربية إف إم Alarabiya FM",
-    "iptv_urls": [],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/-pLcF_Hy0_M"
-    ],
-    "language": "ara",
-    "country": "sa",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "mnGrOVLP3AcawZ",
-    "name": "BBC Arabic",
-    "iptv_urls": [],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/UH09bpqGXvM"
-    ],
-    "language": "ara",
-    "country": "sa",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "fRY4lX1ruplDNF",
-    "name": "DW Arabic",
-    "iptv_urls": [],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/AGkp2AL8e7o"
-    ],
     "language": "ara",
     "country": "sa",
     "isGeoBlocked": false
@@ -424,6 +446,28 @@
       "https://live-stream.skynewsarabia.com/c-vertical-channel/vertical-stream/index.m3u8"
     ],
     "youtube_urls": [],
+    "language": "ara",
+    "country": "sa",
+    "isGeoBlocked": false
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "sa",
+    "nanoid": "TRTArabSA000000"
+  },
+  {
+    "nanoid": "gc9Dx83f1hgp7k",
+    "name": "العربية إف إم Alarabiya FM",
+    "iptv_urls": [],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/-pLcF_Hy0_M"
+    ],
     "language": "ara",
     "country": "sa",
     "isGeoBlocked": false

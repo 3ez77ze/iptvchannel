@@ -1,5 +1,18 @@
 [
   {
+    "nanoid": "qg16a7MXPX4r6un",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "sy",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "UDLgW0XuhfviSI",
     "name": "Alikhbaria Syria",
     "iptv_urls": [],
@@ -68,6 +81,17 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "sy",
+    "nanoid": "RTArabSY000000"
+  },
+  {
     "nanoid": "hGJWMD70oUF4Yo",
     "name": "Syria TV",
     "iptv_urls": [
@@ -83,25 +107,23 @@
     "isGeoBlocked": false
   },
   {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "sy",
+    "nanoid": "TRTArabSY000000"
+  },
+  {
     "nanoid": "juxXjhcoxJLbzK",
     "name": "Welat TV (1080i)",
     "iptv_urls": [
       "https://stream.badinan.xyz/welat/tv/playlist.m3u8"
     ],
     "youtube_urls": [],
-    "language": "ara",
-    "country": "sy",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "qg16a7MXPX4r6un",
-    "name": "Al Jazeera Arabic",
-    "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
     "language": "ara",
     "country": "sy",
     "isGeoBlocked": false

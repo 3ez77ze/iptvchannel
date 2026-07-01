@@ -1,5 +1,18 @@
 [
   {
+    "nanoid": "4eUw1SIqPGC0ikA",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "ly",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "5Ifwf5QY9UROAQ",
     "name": "Al Masar TV",
     "iptv_urls": [
@@ -33,6 +46,17 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "ly",
+    "nanoid": "RTArabLY000000"
+  },
+  {
     "nanoid": "mrp70KU0WrVVjJ",
     "name": "Tanasuh TV",
     "iptv_urls": [
@@ -44,16 +68,14 @@
     "isGeoBlocked": false
   },
   {
-    "nanoid": "4eUw1SIqPGC0ikA",
-    "name": "Al Jazeera Arabic",
+    "name": "TRT Arabic",
     "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
     ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
+    "youtube_urls": [],
     "language": "ara",
+    "isGeoBlocked": false,
     "country": "ly",
-    "isGeoBlocked": false
+    "nanoid": "TRTArabLY000000"
   }
 ]

@@ -11,6 +11,19 @@
     "isGeoBlocked": false
   },
   {
+    "nanoid": "NtsSezOvqMEGKwF",
+    "name": "Al Jazeera Arabic",
+    "iptv_urls": [
+      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
+    ],
+    "youtube_urls": [
+      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
+    ],
+    "language": "ara",
+    "country": "lb",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "RKYxMTuqjzOP53",
     "name": "Al Manar",
     "iptv_urls": [
@@ -198,25 +211,34 @@
     "isGeoBlocked": false
   },
   {
+    "name": "RT Arabic",
+    "iptv_urls": [
+      "https://rt-arb.rttv.com/live/rtarab/playlist_1600Kb.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "lb",
+    "nanoid": "RTArabLB000000"
+  },
+  {
+    "name": "TRT Arabic",
+    "iptv_urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master_1080.m3u8"
+    ],
+    "youtube_urls": [],
+    "language": "ara",
+    "isGeoBlocked": false,
+    "country": "lb",
+    "nanoid": "TRTArabLB000000"
+  },
+  {
     "nanoid": "fWdgIuiyR31OcO",
     "name": "Voice of Lebanon",
     "iptv_urls": [
       "https://svs.itworkscdn.net/vdltvlive/vdltv.smil/playlist.m3u8"
     ],
     "youtube_urls": [],
-    "language": "ara",
-    "country": "lb",
-    "isGeoBlocked": false
-  },
-  {
-    "nanoid": "NtsSezOvqMEGKwF",
-    "name": "Al Jazeera Arabic",
-    "iptv_urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/03.m3u8"
-    ],
-    "youtube_urls": [
-      "https://www.youtube-nocookie.com/embed/bNyUyrR0PHo"
-    ],
     "language": "ara",
     "country": "lb",
     "isGeoBlocked": false
