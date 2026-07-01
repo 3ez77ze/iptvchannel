@@ -1,0 +1,50 @@
+[
+  {
+    "nanoid": "GlobalTVMongolia",
+    "name": "GlobalTV",
+    "iptv_urls": [
+      "https://cdn4.skygo.mn/live/disk1/GlobalTV/HLSv3-FTA/GlobalTV-avc1_3000000=9-mp4a_256000=11.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MNBSportTvivu",
+    "name": "MNB Sport",
+    "iptv_urls": [
+      "https://live.mnb.mn/hls/mnb_sport.stream.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "SuldTVTvivu",
+    "name": "Suld TV",
+    "iptv_urls": [
+      "https://cdn4.skygo.mn/live/disk1/SuldTV/HLSv3-FTA/SuldTV.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
+  },
+  {
+    "nanoid": "MongolianNewsChannelTvivu",
+    "name": "Mongolian News Channel",
+    "iptv_urls": [
+      "https://cdn4.skygo.mn/live/disk1/MNCTV/HLSv3-FTA/MNCTV.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "mon",
+    "country": "mn",
+    "isGeoBlocked": false
+  }
+]

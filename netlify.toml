@@ -14,6 +14,12 @@
   to = "/sports.html"
   status = 200
 
+# CazeTV page
+[[redirects]]
+  from = "/cazetv"
+  to = "/cazetv.html"
+  status = 200
+
 # Rewrite API routes to serve the static JSON data files directly.
 # Status 200 makes these transparent rewrites (not client-visible redirects).
 

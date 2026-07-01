@@ -1,5 +1,19 @@
 [
   {
+    "nanoid": "ArenaSport1PremiumRS",
+    "name": "Arena Sport 1 Premium",
+    "iptv_urls": [
+      "https://nl1.nghk.ai/ArenaPremium1HD/index.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "srp",
+    "country": "rs",
+    "isGeoBlocked": true,
+    "vpnRequired": true,
+    "vpnCountry": "Serbia"
+  },
+  {
     "nanoid": "qkM92vJxZ4pYtN",
     "name": "Balkan Radio Salzburg",
     "iptv_urls": [
