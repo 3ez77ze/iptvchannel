@@ -1,5 +1,17 @@
 [
   {
+    "nanoid": "CCTV9ChinaY77",
+    "name": "CCTV-9",
+    "iptv_urls": [
+      "https://xykt-fix.github.io/Y77.m3u8"
+    ],
+    "youtube_urls": [],
+    "embed_urls": [],
+    "language": "zho",
+    "country": "cn",
+    "isGeoBlocked": false
+  },
+  {
     "nanoid": "zRxr2ZAtzWPYCP",
     "name": "Ando TV",
     "iptv_urls": [

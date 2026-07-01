@@ -843,7 +843,7 @@
     "country": "Mongolia",
     "capital": "Ulaanbaatar",
     "timeZone": "Asia/Ulaanbaatar",
-    "hasChannels": false
+    "hasChannels": true
   },
   "MO": {
     "country": "Macau",
