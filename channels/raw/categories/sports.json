@@ -1497,5 +1497,17 @@
     "language": "sqi",
     "country": "al",
     "isGeoBlocked": false
+  },
+  {
+    "nanoid": "ArenaSport1PremiumBH",
+    "name": "Arena Sport 1 Premium BH",
+    "iptv_urls": [],
+    "youtube_urls": [],
+    "embed_urls": [
+      "https://tvivu.com/embed/arena-sport-premium-1-bh"
+    ],
+    "language": "bos",
+    "country": "ba",
+    "isGeoBlocked": false
   }
 ]
